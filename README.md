@@ -32,6 +32,10 @@ Alt + s
 3. Check start Postherr in the installer OR restart your PC
 4. Finished: **Postherr** will be installed and automatically run upon startup.
 
+# Troubleshooting
+Error message regarding .NET 6 ?
+-> click on install .NET6 -> installer automatically downloaded; run Posther installer again after .NET6 has been installed!
+
    ---
 
 "I don't want it to run upon startup"
