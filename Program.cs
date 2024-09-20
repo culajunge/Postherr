@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Threading;
@@ -157,6 +157,7 @@ class Program
     private const uint VK_Q = 0x51; //q
     private const uint VK_E = 0x45;
     private const uint VK_S = 0x53;
+    private const uint VK_1 = 0x31;
     #endregion
 
     #region Window Visibility
@@ -214,8 +215,8 @@ class Program
     public static bool runningMSGThread = false;
 
     public static int pasteWaitTime = 400;
-    public static int threadAliveTime = 600000; //10 minutes
-    public static int generateNewAccountTime = 100000; // more that 1,5 minutes
+    public static int threadAliveTime = 1200000; //10 minutes
+    public static int generateNewAccountTime = 600000; // more that 1,5 minutes
 
     public static MailClient currentClient;
     public static string currentPassword;
@@ -516,6 +517,14 @@ class Program
         {
             Console.WriteLine("Failed to register hotkey Alt + S.");
         }
+        if (RegisterHotKey(IntPtr.Zero, 5, MOD_ALT, VK_1))
+        {
+            Console.WriteLine("Hotkey Alt + 1 registered for Account REgenerate.");
+        }
+        else
+        {
+            Console.WriteLine("Failed to register hotkey Alt + 1.");
+        }
 
 
 
@@ -544,6 +553,9 @@ class Program
                     case 4:
                         //Alt + S
                         OnHotKeyVerificationCodePressed();
+                        break;
+                    case 5:
+                        OnAccountRegenerate();
                         break;
                 }
                 
@@ -738,6 +750,17 @@ class Program
         verificationCodeCounter++;
     }
 
+    [STAThread]
+    private static async void OnAccountRegenerate()
+    {
+        Console.WriteLine("yur");
+        if (!CanExecute()) return;
+        Console.WriteLine("Hotkey Account Regenerate pressed!");
+
+        await GenerateMailClient();
+        runningMSGThread = false;
+    }
+
     #endregion
 
     void OnStop()
@@ -747,5 +770,6 @@ class Program
         UnregisterHotKey(IntPtr.Zero, 2);
         UnregisterHotKey(IntPtr.Zero, 3);
         UnregisterHotKey(IntPtr.Zero, 4);
+        UnregisterHotKey(IntPtr.Zero, 5);
     }
 }
