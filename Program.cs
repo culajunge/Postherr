@@ -27,8 +27,33 @@ class Program
 {
     #region NameGen
 
-    static string[] firstWord = {"adjrective"};
-    static string[] secondWord = {"noun"};
+    static string[] firstWord =
+    {
+        "schwarzer", "flotter", "gruener", "harmonischer", "schoener", "schlauer", "durchgeknallter", "gewaschender",
+        "sauberer", "dreckiger", "lakaka", "suechtiger", "ungeliebter", "selbstmordgefährdeter", "depressiver",
+        "gesprengter", "schwimmendes", "geile", "gruselige", "spooky", "schummelnder",
+        "geschwindigkeitsUeberschreitende", "kleiner", "grosser", "veganer", "fleichfressender", "linksversiffter",
+        "gefeierter", "auserwaehlter", "radikaler", "schlechter", "boeser", "guter", "attraktive", "begeisterte",
+        "vieler", "harter", "vollgeschissene", "verschimmelter", "verseuchter", "versiffter", "nutzloser",
+        "angestrengter", "unnoetiger", "halal", "haram", "gespannter", "erregter", "lange", "tiefer", "steifer",
+        "gestreckte", "enge", "feuchte", "unterschriebene", "ausgeleiherte", "fleischiger", "maennlicher", "weibliche",
+        "Steuernhinterziehende", "bombadierter", "gejagter", "politischVerfolgter", "transgender", "homosexueller",
+        "gebleichter", "pythonnutzender", "spielsuechtiger", "rauchender"
+    };
+
+    static string[] secondWord =
+    {
+        "Klabautermann", "Seefahrer", "BurgerKingArbeiter", "Kuenstler", "Pirat", "Entwickler", "Verb", "Apflel",
+        "Marrokaner", "Gieskanne", "Wetterballon", "Basketball", "Mappe", "Vikinger", "Sitzsackpolster", "CDUWaehler",
+        "Gruenenwaehler", "BMWFahrer", "Helge", "Fahrlehrer", "Huan", "DireStraitsFan", "Schaumkrone", "Wackler",
+        "Investor", "Helium", "Shakespeare", "Meister", "Rhabarbarkuchen", "Geisterbahn", "Schimmel", "Kerzentraeger",
+        "Bierbrauer", "Omelett", "Franzose", "Drache", "Fussende", "Wolkenkratzer", "Mathegenie", "Monkey", "Affe",
+        "Vogelscheuche", "Baum", "Minenschacht", "StuhlTischBank", "Vater", "Yarrack", "Topografie", "Geographie",
+        "Franzose", "Karte", "Alkohol", "Flasche", "Designerstueck", "Spiel", "Taschentuch", "Metalldetektor", "jeans",
+        "Unterhose", "Bomber", "Islam", "schlawiner", "Palestiner", "PythonNutzer", "Gambler", "Spielsuechtiger",
+        "CasinoBesucher", "VegasLover", "Raucher", "Kartoffel", "Rechtschreibfehler", "Check24"
+    };
+
     static int numRange = 200;
 
     public static async Task<string> GetCoolUsername()
@@ -114,8 +139,85 @@ class Program
     }
 
     #endregion
+    
+    #region Facts
+    
+    public static string GetApiKey(string serviceName, string filePath = "api_keys.csv")
+    {
+        try
+        {
+            // Read all lines from the CSV file
+            var lines = File.ReadAllLines(filePath);
+
+            // Skip the header row and search for the matching service name
+            var keyLine = lines
+                .Skip(1) // Skip the header
+                .FirstOrDefault(line => line.StartsWith(serviceName + ","));
+
+            if (keyLine != null)
+            {
+                // Split the line by the comma and return the second column (the API key)
+                var parts = keyLine.Split(',');
+                return parts.Length > 1 ? parts[1].Trim() : null;
+            }
+            else
+            {
+                throw new Exception($"Service '{serviceName}' not found in the API keys file.");
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"Error reading API key: {ex.Message}");
+        }
+    }
+    
+    private static readonly HttpClient factClient = new HttpClient();
+    private const string ApiUrl = "https://api.api-ninjas.com/v1/facts";
+
+    public static async Task<string> GetRandomFact(string apiKeyFile = "apikey.csv")
+    {
+        try
+        {
+            // Get API Key from the CSV file
+            var apiKey = GetApiKey("FactsAPI", apiKeyFile);
+            if (string.IsNullOrEmpty(apiKey))
+            {
+                throw new Exception("API key not found.");
+            }
+
+            factClient.DefaultRequestHeaders.Clear();
+            factClient.DefaultRequestHeaders.Add("X-Api-Key", apiKey);
+            var response = await factClient.GetAsync(ApiUrl);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var jsonArray = JArray.Parse(content);
+
+                if (jsonArray.Count > 0 && jsonArray[0]["fact"] != null)
+                {
+                    return jsonArray[0]["fact"].ToString();
+                }
+                else
+                {
+                    return "No facts found.";
+                }
+            }
+            else
+            {
+                return $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+            }
+        }
+        catch (Exception ex)
+        {
+            return $"Error: {ex.Message}";
+        }
+    }
+    
+    #endregion
 
     #region Shortcut
+
     [DllImport("user32.dll", SetLastError = true)]
     private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);
 
@@ -152,12 +254,15 @@ class Program
     private const uint MOD_WIN = 0x0008;
 
     // Virtual Key Codes
-    private const uint VK_F9 = 0x78;  // F9 key
+    private const uint VK_F9 = 0x78; // F9 key
     private const uint VK_W = 0x57; //w
     private const uint VK_Q = 0x51; //q
     private const uint VK_E = 0x45;
     private const uint VK_S = 0x53;
     private const uint VK_1 = 0x31;
+    private const uint VK_P = 0x50;
+    private const uint VK_F = 0x46;
+
     #endregion
 
     #region Window Visibility
@@ -186,7 +291,7 @@ class Program
     {
         Random _random = new Random();
 
-        
+
         const string allChars = lower + upper + digits + symbols;
 
         int passwordLength = _random.Next(8, 17); // Generates a length between 8 and 16
@@ -212,11 +317,13 @@ class Program
     #endregion
 
     #region Important Variables or something i guess
+
     public static bool runningMSGThread = false;
+    public static bool killAllMSGThreads = false;
 
     public static int pasteWaitTime = 400;
-    public static int threadAliveTime = 1200000; //10 minutes
-    public static int generateNewAccountTime = 600000; // more that 1,5 minutes
+    public static int threadAliveTime = 1200000; //20 minutes
+    public static int generateNewAccountTime = 600000; // more that 1,5 minutes (10min)
 
     public static MailClient currentClient;
     public static string currentPassword;
@@ -233,13 +340,14 @@ class Program
     {
         string nl = "";
 
-        for(int i = 0; i < amount; i++)
+        for (int i = 0; i < amount; i++)
         {
             nl += newline;
         }
 
         return nl;
     }
+
     #endregion
 
     #region Clipboard Action
@@ -287,7 +395,6 @@ class Program
             {
                 Console.WriteLine($"Pasting Error, maybe dont click that fast, or: {ex.ToString()}");
             }
-
         });
 
         staThread.SetApartmentState(ApartmentState.STA);
@@ -349,7 +456,8 @@ class Program
 
         // Optionally, you can also clean up extra whitespace or newlines
         plainText = System.Web.HttpUtility.HtmlDecode(plainText); // Decode HTML entities
-        plainText = System.Text.RegularExpressions.Regex.Replace(plainText, @"\s+", " "); // Replace multiple spaces/newlines with a single space
+        plainText = System.Text.RegularExpressions.Regex.Replace(plainText, @"\s+",
+            " "); // Replace multiple spaces/newlines with a single space
         plainText = plainText.Trim();
 
         return plainText;
@@ -370,7 +478,7 @@ class Program
         emailText = emailText.ToLower();
 
         // Keywords to search for around the verification code
-        string[] keywords = { "verification", "verify", "code", "authentication", "authenticate", "verif", "authen"};
+        string[] keywords = { "verification", "verify", "code", "authentication", "authenticate", "verif", "authen" };
 
         // Regular expression to find 4 or 6 digit numbers
         string codePattern = @"\b\d{4,6}\b";
@@ -380,7 +488,8 @@ class Program
         foreach (string keyword in keywords)
         {
             // Regex pattern to search for the keyword and a 4-6 digit number within the proximity range
-            string pattern = $@"\b{keyword}\b.{{0,{proximity}}}?" + codePattern + $@"|" + codePattern + $@".{{0,{proximity}}}?\b{keyword}\b";
+            string pattern = $@"\b{keyword}\b.{{0,{proximity}}}?" + codePattern + $@"|" + codePattern +
+                             $@".{{0,{proximity}}}?\b{keyword}\b";
             MatchCollection matches = Regex.Matches(emailText, pattern, RegexOptions.IgnoreCase);
 
             foreach (Match match in matches)
@@ -403,10 +512,11 @@ class Program
 
         if (!keywordFound)
         {
-            if(!String.IsNullOrEmpty(fancyAssText) && fancyAssText != "" && fancyAssText != empty)
+            if (!String.IsNullOrEmpty(fancyAssText) && fancyAssText != "" && fancyAssText != empty)
             {
                 emailText = fancyAssText.ToLower();
             }
+
             // If no keywords are found, fallback to finding the code closest to the center of the text
             int centerPosition = emailText.Length / 2;
             MatchCollection matches = Regex.Matches(emailText, codePattern, RegexOptions.IgnoreCase);
@@ -449,7 +559,8 @@ class Program
         try
         {
             await client.Register(customEmailAddress, password);
-        }catch (Exception ex)
+        }
+        catch (Exception ex)
         {
             Console.WriteLine($"ERROR creting new account, retrying {ex.Message}");
 
@@ -473,8 +584,6 @@ class Program
         return client;
     }
 
-
-    
 
     static async Task SetupTempMailsNShit()
     {
@@ -509,6 +618,7 @@ class Program
         {
             Console.WriteLine("Failed to register hotkey Alt + E.");
         }
+
         if (RegisterHotKey(IntPtr.Zero, 4, MOD_ALT, VK_S))
         {
             Console.WriteLine("Hotkey Alt + S registered for VeriCode.");
@@ -517,6 +627,7 @@ class Program
         {
             Console.WriteLine("Failed to register hotkey Alt + S.");
         }
+
         if (RegisterHotKey(IntPtr.Zero, 5, MOD_ALT, VK_1))
         {
             Console.WriteLine("Hotkey Alt + 1 registered for Account REgenerate.");
@@ -526,16 +637,31 @@ class Program
             Console.WriteLine("Failed to register hotkey Alt + 1.");
         }
 
+        if (RegisterHotKey(IntPtr.Zero, 6, MOD_ALT, VK_P))
+        {
+            Console.WriteLine("Hotkey Alt + P registered for Email loop elimination.");
+        }
+        else
+        {
+            Console.WriteLine("Failed to register hotkey Alt + P.");
+        }
+        if (RegisterHotKey(IntPtr.Zero, 7, MOD_ALT, VK_F))
+        {
+            Console.WriteLine("Hotkey Alt + P registered for Pasting random fact.");
+        }
+        else
+        {
+            Console.WriteLine("Failed to register hotkey Alt + P.");
+        }
 
 
         MSG msg;
-        while(GetMessage(out msg, IntPtr.Zero, 0, 0))
+        while (GetMessage(out msg, IntPtr.Zero, 0, 0))
         {
             if (msg.message == WM_HOTKEY)
             {
-
                 //OnHotKeyPressed();
-                
+
                 switch (msg.wParam.ToInt32())
                 {
                     case 1:
@@ -557,8 +683,13 @@ class Program
                     case 5:
                         OnAccountRegenerate();
                         break;
+                    case 6:
+                        OnEmailLoopEliminate();
+                        break;
+                    case 7:
+                        OnRandomFactPressed();
+                        break;
                 }
-                
             }
         }
 
@@ -584,7 +715,9 @@ class Program
                 string plainText = ExtractTextFromHtml(source.Data);
                 string? BodyText;
 
-                if(messageDetails != null && messageDetails.BodyText != null && messageDetails.BodyText.ToString() != null) {
+                if (messageDetails != null && messageDetails.BodyText != null &&
+                    messageDetails.BodyText.ToString() != null)
+                {
                     BodyText = messageDetails.BodyText.ToString();
                     if (String.IsNullOrEmpty(BodyText))
                     {
@@ -596,32 +729,41 @@ class Program
                     BodyText = empty;
                 }
 
-                currentVerificationCodes = ExtractVerificationCodes(plainText, 50, message.Subject.ToString() + BodyText);
+                currentVerificationCodes =
+                    ExtractVerificationCodes(plainText, 50, message.Subject.ToString() + BodyText);
                 verificationCodeCounter = 0;
                 string verificationCode = currentVerificationCodes.Length > 0 ? currentVerificationCodes[0] : "";
 
-                
+
                 string messageToLog = $"{newline} " +
-    $"From: {message.From.Address}{newline} " +
-    $"Subject: {message.Subject}{newline} " +
-    $"Code: {verificationCode}{NewLine(2)} " +
-    $"Body: {newline} " +
-    $"---------------------------- {NewLine(2)} " +
-    $"{GetNewlineCompatible(BodyText)}{newline} " +
-    $"============================ {newline}" +
-    $"{rawBody}: {GetNewlineCompatible(plainText)}";
+                                      $"From: {message.From.Address}{newline} " +
+                                      $"Subject: {message.Subject}{newline} " +
+                                      $"Code: {verificationCode}{NewLine(2)} " +
+                                      $"Body: {newline} " +
+                                      $"---------------------------- {NewLine(2)} " +
+                                      $"{GetNewlineCompatible(BodyText)}{newline} " +
+                                      $"============================ {newline}" +
+                                      $"{rawBody}: {GetNewlineCompatible(plainText)}";
 
                 LogMessage(messageToLog);
 
                 await currentClient.MarkMessageAsSeen(message.Id, true);
                 await currentClient.DeleteMessage(message.Id);
 
+                if (killAllMSGThreads)
+                {
+                    Thread.Sleep(4000); //4secs thats more than 3 duh!
+
+                    killAllMSGThreads = false;
+                    runningMSGThread = false;
+                    running = false;
+                }
 
                 if (!runningExitThread)
                 {
                     Console.WriteLine($"Exiting CheckThread in {threadAliveTime} Milliseconds");
                     runningExitThread = true;
-                    //Disable Account 1.5 minutes after first message
+                    //Disable Account 1.5 minutes after first message or smth i dunno probably changed it idk.
                     Thread timedThread = new Thread(async () =>
                     {
                         Thread.Sleep(generateNewAccountTime);
@@ -640,22 +782,20 @@ class Program
                         }
 
                         Console.WriteLine("Exited a CheckThread");
-
                     });
                     timedThread.Start();
                 }
             }
+
             await Task.Delay(3000); //sleep sum time!
         }
     }
 
 
-
     [STAThread]
     static async Task Main()
     {
-
-        if(minimizeOnStart)
+        if (minimizeOnStart)
         {
             var handle = GetConsoleWindow();
             ShowWindow(handle, SW_HIDE);
@@ -663,14 +803,13 @@ class Program
 
         await SetupTempMailsNShit();
         //UnregisterHotKey(IntPtr.Zero, 1); //TODO do that somewhere else!
-        
     }
 
     #region Cooldown because my code is as unstable as my mental condition
 
     private static DateTime lastHotKeyPress = DateTime.MinValue;
     private static readonly object cooldownLock = new object();
-    private static readonly TimeSpan cooldown = TimeSpan.FromSeconds(0.5 + (pasteWaitTime/1000) * 2);
+    private static readonly TimeSpan cooldown = TimeSpan.FromSeconds(0.5 + (pasteWaitTime / 1000) * 2);
 
     private static bool CanExecute()
     {
@@ -694,7 +833,7 @@ class Program
     [STAThread]
     private static void OnHotKeyPressed()
     {
-        if (!CanExecute()) return;
+        //if (!CanExecute()) return;
         Console.WriteLine("Hotkey pressed!");
         //if (currentClient == null) await GenerateMailClient();
 
@@ -708,11 +847,11 @@ class Program
             Console.WriteLine("Message Thread already running");
             return;
         }
+
         runningMSGThread = true;
 
         Thread messageCheckerThread = new Thread(() => CheckNewMessages(currentClient));
         messageCheckerThread.Start();
-
     }
 
     [STAThread]
@@ -741,7 +880,7 @@ class Program
         if (!CanExecute() || currentVerificationCodes == null) return;
         Console.WriteLine("Hotkey VeriCode pressed!");
 
-        if(!(verificationCodeCounter + 1 <= currentVerificationCodes!.Length))
+        if (!(verificationCodeCounter + 1 <= currentVerificationCodes!.Length))
         {
             verificationCodeCounter = 0;
         }
@@ -753,12 +892,30 @@ class Program
     [STAThread]
     private static async void OnAccountRegenerate()
     {
-        Console.WriteLine("yur");
         if (!CanExecute()) return;
         Console.WriteLine("Hotkey Account Regenerate pressed!");
 
         await GenerateMailClient();
         runningMSGThread = false;
+    }
+
+    [STAThread]
+    private static async void OnEmailLoopEliminate()
+    {
+        if (!CanExecute()) return;
+        Console.WriteLine("Hotkey Email Loop big red button or something idk what im doing pls help pressed!");
+
+        runningMSGThread = false;
+        killAllMSGThreads = true;
+    }
+    
+    [STAThread]
+    private static async void OnRandomFactPressed()
+    {
+        if (!CanExecute()) return;
+        
+        string fact = await GetRandomFact();
+        PasteText(fact);
     }
 
     #endregion
