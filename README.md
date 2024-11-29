@@ -14,6 +14,8 @@ Alt + e  paste random username
 
 Alt + 1 generate new account
 
+Alt + f pastes a random fact ;)
+
 ---
 
 This enables really fast trash account creation and whatever else you want to do with it...
