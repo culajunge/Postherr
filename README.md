@@ -36,7 +36,8 @@ Alt + s
 
 # Troubleshooting
 Error message regarding .NET 6 ?
--> click on install .NET6 -> installer automatically downloaded; run Posther installer again after .NET6 has been installed!
+-> install newer version (v1.4.1 and above)
+-> OR: click on install .NET6 -> installer automatically downloaded; run Posther installer again after .NET6 has been installed!
 
    ---
 
