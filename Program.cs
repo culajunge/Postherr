@@ -1,27 +1,13 @@
-using System;
 using System.Diagnostics;
-using System.Threading.Tasks;
-using System.Threading;
-using System.ServiceProcess;
 using System.Runtime.InteropServices;
 using SmorcIRL.TempMail;
-using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
 using System.Text;
 using Newtonsoft.Json.Linq;
 using WindowsInput;
 using WindowsInput.Native;
-using Tesseract;
-using UglyToad.PdfPig;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.IO;
 using SmorcIRL.TempMail.Models;
-using System.Net.Http;
-using HtmlAgilityPack;
 using System.Text.RegularExpressions;
 using System.Text.Json;
-using Windows.Media.AppBroadcasting;
 
 class Program
 {
@@ -29,29 +15,12 @@ class Program
 
     static string[] firstWord =
     {
-        "schwarzer", "flotter", "gruener", "harmonischer", "schoener", "schlauer", "durchgeknallter", "gewaschender",
-        "sauberer", "dreckiger", "lakaka", "suechtiger", "ungeliebter", "selbstmordgefährdeter", "depressiver",
-        "gesprengter", "schwimmendes", "geile", "gruselige", "spooky", "schummelnder",
-        "geschwindigkeitsUeberschreitende", "kleiner", "grosser", "veganer", "fleichfressender", "linksversiffter",
-        "gefeierter", "auserwaehlter", "radikaler", "schlechter", "boeser", "guter", "attraktive", "begeisterte",
-        "vieler", "harter", "vollgeschissene", "verschimmelter", "verseuchter", "versiffter", "nutzloser",
-        "angestrengter", "unnoetiger", "halal", "haram", "gespannter", "erregter", "lange", "tiefer", "steifer",
-        "gestreckte", "enge", "feuchte", "unterschriebene", "ausgeleiherte", "fleischiger", "maennlicher", "weibliche",
-        "Steuernhinterziehende", "bombadierter", "gejagter", "politischVerfolgter", "transgender", "homosexueller",
-        "gebleichter", "pythonnutzender", "spielsuechtiger", "rauchender"
+        "firtstWord"
     };
 
     static string[] secondWord =
     {
-        "Klabautermann", "Seefahrer", "BurgerKingArbeiter", "Kuenstler", "Pirat", "Entwickler", "Verb", "Apflel",
-        "Marrokaner", "Gieskanne", "Wetterballon", "Basketball", "Mappe", "Vikinger", "Sitzsackpolster", "CDUWaehler",
-        "Gruenenwaehler", "BMWFahrer", "Helge", "Fahrlehrer", "Huan", "DireStraitsFan", "Schaumkrone", "Wackler",
-        "Investor", "Helium", "Shakespeare", "Meister", "Rhabarbarkuchen", "Geisterbahn", "Schimmel", "Kerzentraeger",
-        "Bierbrauer", "Omelett", "Franzose", "Drache", "Fussende", "Wolkenkratzer", "Mathegenie", "Monkey", "Affe",
-        "Vogelscheuche", "Baum", "Minenschacht", "StuhlTischBank", "Vater", "Yarrack", "Topografie", "Geographie",
-        "Franzose", "Karte", "Alkohol", "Flasche", "Designerstueck", "Spiel", "Taschentuch", "Metalldetektor", "jeans",
-        "Unterhose", "Bomber", "Islam", "schlawiner", "Palestiner", "PythonNutzer", "Gambler", "Spielsuechtiger",
-        "CasinoBesucher", "VegasLover", "Raucher", "Kartoffel", "Rechtschreibfehler", "Check24"
+        "secondWord"
     };
 
     static int numRange = 200;
@@ -92,7 +61,7 @@ class Program
         catch (Exception ex)
         {
             // Handle any exceptions that occur during the HTTP request
-            Console.WriteLine($"An error occurred: {ex.Message}");
+            Log($"An error occurred: {ex.Message}");
             return null;
         }
     }
@@ -124,7 +93,7 @@ class Program
         catch (JsonException)
         {
             // Handle JSON parsing errors
-            Console.WriteLine("Failed to parse JSON response.");
+            Log("Failed to parse JSON response.");
             return null;
         }
     }
@@ -142,10 +111,115 @@ class Program
     
     #region Facts
     
-    public static string GetApiKey(string serviceName, string filePath = "api_keys.csv")
+    const string factFilePath = "Facts.txt";
+    
+    public static async Task<string> GetRandomContent(string filePath = factFilePath)
+    {
+        Random random = new Random();
+        bool useFile = random.Next(2) == 0;
+
+        string fact = "";
+        if (useFile)
+        {
+            fact = GetRandomLine();
+        }
+        else
+        {
+            fact = await GetRandomFact();
+        }
+
+        if (fact == "ERROR")
+        {
+            fact = GetRandomLine();
+            Log("Fact from API failed, using fact from file instead :(");
+        }
+        
+        return string.IsNullOrEmpty(fact)? "Error: Fact File not available" : fact;
+    }
+    
+    private static List<string> _facts = new List<string>();
+
+    public static void InitializeFacts(string filePath)
     {
         try
         {
+            if (!File.Exists(filePath))
+            {
+                string errmsg = $"The fact file at {filePath} does not exist.";
+                Log(errmsg);
+                return;
+            }
+
+            if (!IsFileReady(filePath))
+            {
+                Log("Error: Fact file not ready during initialization.");
+                return;
+            }
+
+            string[] lines = File.ReadAllLines(filePath);
+            if (lines.Length == 0)
+            {
+                Log("Error: The fact file is empty.");
+                return;
+            }
+
+            _facts = new List<string>(lines);
+            Log($"Facts loaded successfully. Total facts: {_facts.Count}");
+        }
+        catch (IOException ex)
+        {
+            Log($"IOException during fact initialization: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            Log($"Unexpected error during fact initialization: {ex.Message}");
+        }
+    }
+
+    public static string GetRandomLine()
+    {
+        try
+        {
+            if (_facts == null || _facts.Count == 0)
+            {
+                Log("Error: No facts are loaded or the fact file is empty.");
+                return "Error: No facts available. Please check the file.";
+            }
+
+            Random random = new Random();
+            int randomIndex = random.Next(_facts.Count);
+            return _facts[randomIndex];
+        }
+        catch (Exception ex)
+        {
+            Log($"Unexpected error while retrieving a random fact: {ex.Message}");
+            return "Error: " + ex.Message;
+        }
+    }
+
+    private static bool IsFileReady(string filePath)
+    {
+        try
+        {
+            using (FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.None))
+            {
+                return true;
+            }
+        }
+        catch (IOException)
+        {
+            return false;
+        }
+    }
+    
+    public static string GetApiKey(string serviceName, string fileName = "apikey.csv")
+    {
+        try
+        {
+            // Get the full path to the CSV file in the same directory as the executable
+            string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string filePath = Path.Combine(appDirectory, fileName);
+
             // Read all lines from the CSV file
             var lines = File.ReadAllLines(filePath);
 
@@ -162,12 +236,13 @@ class Program
             }
             else
             {
-                throw new Exception($"Service '{serviceName}' not found in the API keys file.");
+                return null;
             }
         }
         catch (Exception ex)
         {
-            throw new Exception($"Error reading API key: {ex.Message}");
+            Console.Write(ex.ToString());
+            return null;
         }
     }
     
@@ -180,9 +255,10 @@ class Program
         {
             // Get API Key from the CSV file
             var apiKey = GetApiKey("FactsAPI", apiKeyFile);
-            if (string.IsNullOrEmpty(apiKey))
+            if (string.IsNullOrEmpty(apiKey) || apiKey == null)
             {
-                throw new Exception("API key not found.");
+                Log("ERROR: API Key not found or invalid.");
+                return "ERROR";
             }
 
             factClient.DefaultRequestHeaders.Clear();
@@ -198,19 +274,14 @@ class Program
                 {
                     return jsonArray[0]["fact"].ToString();
                 }
-                else
-                {
-                    return "No facts found.";
-                }
             }
-            else
-            {
-                return $"Error: {response.StatusCode} - {response.ReasonPhrase}";
-            }
+            Log("ERROR: API Fact retrieval failed.");
+            return "ERROR";
         }
         catch (Exception ex)
         {
-            return $"Error: {ex.Message}";
+            Log($"Error during API fact retrieval: {ex.Message}, returned fact from file");
+            return "ERROR";
         }
     }
     
@@ -393,18 +464,55 @@ class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Pasting Error, maybe dont click that fast, or: {ex.ToString()}");
+                Log($"Pasting Error, maybe dont click that fast, or: {ex.ToString()}");
             }
         });
 
         staThread.SetApartmentState(ApartmentState.STA);
         staThread.Start();
         staThread.Join();
+        
+        LogPasted(text);
     }
 
     #endregion
 
     #region Logging
+
+    public static void Log(string msg, bool skipLine = false)
+    {
+        Console.WriteLine(msg);
+        LogToFile(msg, skipLine);
+    }
+
+    public static void LogPasted(string msg)
+    {
+        Log($"Pasted: {msg}");
+    }
+    
+    public static void LogToFile(string message, bool skipLine)
+    {
+        try
+        {
+            // Get the directory of the executable
+            string exeDirectory = AppContext.BaseDirectory;
+
+            // Define the log file path
+            string logFilePath = Path.Combine(exeDirectory, "log.txt");
+            
+            string skipLineChar = skipLine ? "\n" : "";
+
+            // Append the message to the log file (creates the file if it doesn't exist)
+            using (StreamWriter writer = new StreamWriter(logFilePath, append: true))
+            {
+                writer.WriteLine($"{skipLineChar}{DateTime.Now:dd/MM/yyyy HH:mm} - {message}");
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception($"Error logging message: {ex.Message}");
+        }
+    }
 
     static void LogMessage(string message)
     {
@@ -422,7 +530,7 @@ class Program
 
         if (!System.IO.File.Exists(loggerPath))
         {
-            Console.WriteLine("ConsoleLogger.exe does not exist at the specified path.");
+            Log("ConsoleLogger.exe does not exist at the specified path.");
             return;
         }
 
@@ -436,7 +544,7 @@ class Program
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error starting process: {ex.Message}");
+            Log($"Error starting process: {ex.Message}");
         }
     }
 
@@ -562,10 +670,10 @@ class Program
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"ERROR creting new account, retrying {ex.Message}");
+            Log($"ERROR creting new account, retrying {ex.Message}");
 
-            Console.WriteLine($"Bad Disposable Email Address: {customEmailAddress}");
-            Console.WriteLine($"Bad Password: {password}");
+            Log($"Bad Disposable Email Address: {customEmailAddress}");
+            Log($"Bad Password: {password}");
 
             Thread.Sleep(5000);
             await GenerateMailClient();
@@ -574,8 +682,8 @@ class Program
 
         var account = await client.GetAccountInfo();
 
-        Console.WriteLine($"Disposable Email Address: {account.Address}");
-        Console.WriteLine($"Password: {password}");
+        Log($"Disposable Email Address: {account.Address}");
+        Log($"Password: {password}");
 
         currentClient = client;
         currentPassword = password;
@@ -598,7 +706,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Failed to register hotkey Alt + Q.");
+            Log("Failed to register hotkey Alt + Q.");
         }
 
         if (RegisterHotKey(IntPtr.Zero, 2, MOD_ALT, VK_W))
@@ -607,7 +715,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Failed to register hotkey Alt + W.");
+            Log("Failed to register hotkey Alt + W.");
         }
 
         if (RegisterHotKey(IntPtr.Zero, 3, MOD_ALT, VK_E))
@@ -616,7 +724,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Failed to register hotkey Alt + E.");
+            Log("Failed to register hotkey Alt + E.");
         }
 
         if (RegisterHotKey(IntPtr.Zero, 4, MOD_ALT, VK_S))
@@ -625,7 +733,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Failed to register hotkey Alt + S.");
+            Log("Failed to register hotkey Alt + S.");
         }
 
         if (RegisterHotKey(IntPtr.Zero, 5, MOD_ALT, VK_1))
@@ -634,7 +742,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Failed to register hotkey Alt + 1.");
+            Log("Failed to register hotkey Alt + 1.");
         }
 
         if (RegisterHotKey(IntPtr.Zero, 6, MOD_ALT, VK_P))
@@ -643,7 +751,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Failed to register hotkey Alt + P.");
+            Log("Failed to register hotkey Alt + P.");
         }
         if (RegisterHotKey(IntPtr.Zero, 7, MOD_ALT, VK_F))
         {
@@ -651,7 +759,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Failed to register hotkey Alt + P.");
+            Log("Failed to register hotkey Alt + P.");
         }
 
 
@@ -666,7 +774,7 @@ class Program
                 {
                     case 1:
                         // Alt + Q was pressed
-                        OnHotKeyPressed();
+                        OnHotKeyEmailAddrPressed();
                         break;
                     case 2:
                         // Alt + W was pressed
@@ -692,6 +800,8 @@ class Program
                 }
             }
         }
+        
+        Log("Postherr exit");
 
         #endregion
     }
@@ -761,14 +871,14 @@ class Program
 
                 if (!runningExitThread)
                 {
-                    Console.WriteLine($"Exiting CheckThread in {threadAliveTime} Milliseconds");
+                    Log($"Exiting CheckThread in {threadAliveTime} Milliseconds");
                     runningExitThread = true;
                     //Disable Account 1.5 minutes after first message or smth i dunno probably changed it idk.
                     Thread timedThread = new Thread(async () =>
                     {
                         Thread.Sleep(generateNewAccountTime);
 
-                        await GenerateMailClient();
+                        //await GenerateMailClient();  NO Auto regenation after time
 
                         runningMSGThread = false;
 
@@ -781,7 +891,7 @@ class Program
                             await currentClient.DeleteAccount();
                         }
 
-                        Console.WriteLine("Exited a CheckThread");
+                        Log("Exited a CheckThread");
                     });
                     timedThread.Start();
                 }
@@ -795,11 +905,14 @@ class Program
     [STAThread]
     static async Task Main()
     {
+        Log("Postherr started", true);
         if (minimizeOnStart)
         {
             var handle = GetConsoleWindow();
             ShowWindow(handle, SW_HIDE);
         }
+
+        InitializeFacts(factFilePath);
 
         await SetupTempMailsNShit();
         //UnregisterHotKey(IntPtr.Zero, 1); //TODO do that somewhere else!
@@ -817,7 +930,7 @@ class Program
         {
             if (DateTime.Now - lastHotKeyPress < cooldown)
             {
-                Console.WriteLine($"Cooldown in effect, try again in: {lastHotKeyPress + cooldown}");
+                Log($"Cooldown in effect, try again in: {lastHotKeyPress + cooldown}");
                 return false;
             }
 
@@ -831,20 +944,18 @@ class Program
     #region HotKey Functions
 
     [STAThread]
-    private static void OnHotKeyPressed()
+    private static void OnHotKeyEmailAddrPressed()
     {
         //if (!CanExecute()) return;
-        Console.WriteLine("Hotkey pressed!");
         //if (currentClient == null) await GenerateMailClient();
 
         string emailaddress = currentClient.Email;
-
+        
         PasteText(emailaddress);
-
 
         if (runningMSGThread)
         {
-            Console.WriteLine("Message Thread already running");
+            Log("Message Thread already running");
             return;
         }
 
@@ -858,7 +969,6 @@ class Program
     private static void OnHotKeyPSWDPressed()
     {
         if (!CanExecute()) return;
-        Console.WriteLine("Hotkey PSWD pressed!");
 
         PasteText(currentPassword!);
     }
@@ -867,7 +977,6 @@ class Program
     private static void OnHotKeyUsernamePressed()
     {
         if (!CanExecute()) return;
-        Console.WriteLine("Hotkey Username pressed!");
 
         PasteText(currentUsername!);
     }
@@ -878,7 +987,6 @@ class Program
     private static void OnHotKeyVerificationCodePressed()
     {
         if (!CanExecute() || currentVerificationCodes == null) return;
-        Console.WriteLine("Hotkey VeriCode pressed!");
 
         if (!(verificationCodeCounter + 1 <= currentVerificationCodes!.Length))
         {
@@ -893,7 +1001,7 @@ class Program
     private static async void OnAccountRegenerate()
     {
         if (!CanExecute()) return;
-        Console.WriteLine("Hotkey Account Regenerate pressed!");
+        Log("Hotkey Account Regenerate pressed!");
 
         await GenerateMailClient();
         runningMSGThread = false;
@@ -903,7 +1011,7 @@ class Program
     private static async void OnEmailLoopEliminate()
     {
         if (!CanExecute()) return;
-        Console.WriteLine("Hotkey Email Loop big red button or something idk what im doing pls help pressed!");
+        Log("Hotkey Email Loop big red button or something idk what im doing pls help pressed!");
 
         runningMSGThread = false;
         killAllMSGThreads = true;
@@ -913,8 +1021,8 @@ class Program
     private static async void OnRandomFactPressed()
     {
         if (!CanExecute()) return;
-        
-        string fact = await GetRandomFact();
+
+        string fact = await GetRandomContent();
         PasteText(fact);
     }
 
@@ -922,11 +1030,13 @@ class Program
 
     void OnStop()
     {
-        Console.WriteLine("Stopping");
+        Log("Stopping");
         UnregisterHotKey(IntPtr.Zero, 1);
         UnregisterHotKey(IntPtr.Zero, 2);
         UnregisterHotKey(IntPtr.Zero, 3);
         UnregisterHotKey(IntPtr.Zero, 4);
         UnregisterHotKey(IntPtr.Zero, 5);
+        UnregisterHotKey(IntPtr.Zero, 6);
+        UnregisterHotKey(IntPtr.Zero, 7);
     }
 }
