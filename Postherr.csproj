@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<UseWindowsForms>true</UseWindowsForms>
+	<SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+	<PackageIcon>postherrLOGO.png</PackageIcon>
+	<ApplicationIcon>icon\postherrLOGO(1).ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon\postherrLOGO(1).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.71" />
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SmorcIRL.TempMail" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon\postherrLOGO.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="mail-256.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
