@@ -12,7 +12,6 @@ using System.Text.Json;
 class Program
 {
     
-    //test 12345678909999
     
     #region NameGen
 
