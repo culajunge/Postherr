@@ -15,12 +15,29 @@ class Program
 
     static string[] firstWord =
     {
-        "firtstWord"
+        "schwarzer", "flotter", "gruener", "harmonischer", "schoener", "schlauer", "durchgeknallter", "gewaschender",
+        "sauberer", "dreckiger", "lakaka", "suechtiger", "ungeliebter", "selbstmordgefährdeter", "depressiver",
+        "gesprengter", "schwimmendes", "geile", "gruselige", "spooky", "schummelnder",
+        "geschwindigkeitsUeberschreitende", "kleiner", "grosser", "veganer", "fleichfressender", "linksversiffter",
+        "gefeierter", "auserwaehlter", "radikaler", "schlechter", "boeser", "guter", "attraktive", "begeisterte",
+        "vieler", "harter", "vollgeschissene", "verschimmelter", "verseuchter", "versiffter", "nutzloser",
+        "angestrengter", "unnoetiger", "halal", "haram", "gespannter", "erregter", "lange", "tiefer", "steifer",
+        "gestreckte", "enge", "feuchte", "unterschriebene", "ausgeleiherte", "fleischiger", "maennlicher", "weibliche",
+        "Steuernhinterziehende", "bombadierter", "gejagter", "politischVerfolgter", "transgender", "homosexueller",
+        "gebleichter", "pythonnutzender", "spielsuechtiger", "rauchender"
     };
 
     static string[] secondWord =
     {
-        "secondWord"
+        "Klabautermann", "Seefahrer", "BurgerKingArbeiter", "Kuenstler", "Pirat", "Entwickler", "Verb", "Apflel",
+        "Marrokaner", "Gieskanne", "Wetterballon", "Basketball", "Mappe", "Vikinger", "Sitzsackpolster", "CDUWaehler",
+        "Gruenenwaehler", "BMWFahrer", "Helge", "Fahrlehrer", "Huan", "DireStraitsFan", "Schaumkrone", "Wackler",
+        "Investor", "Helium", "Shakespeare", "Meister", "Rhabarbarkuchen", "Geisterbahn", "Schimmel", "Kerzentraeger",
+        "Bierbrauer", "Omelett", "Franzose", "Drache", "Fussende", "Wolkenkratzer", "Mathegenie", "Monkey", "Affe",
+        "Vogelscheuche", "Baum", "Minenschacht", "StuhlTischBank", "Vater", "Yarrack", "Topografie", "Geographie",
+        "Franzose", "Karte", "Alkohol", "Flasche", "Designerstueck", "Spiel", "Taschentuch", "Metalldetektor", "jeans",
+        "Unterhose", "Bomber", "Islam", "schlawiner", "Palestiner", "PythonNutzer", "Gambler", "Spielsuechtiger",
+        "CasinoBesucher", "VegasLover", "Raucher", "Kartoffel", "Rechtschreibfehler", "Check24"
     };
 
     static int numRange = 200;
@@ -108,11 +125,11 @@ class Program
     }
 
     #endregion
-    
+
     #region Facts
-    
+
     const string factFilePath = "Facts.txt";
-    
+
     public static async Task<string> GetRandomContent(string filePath = factFilePath)
     {
         Random random = new Random();
@@ -133,13 +150,13 @@ class Program
             fact = GetRandomLine();
             Log("Fact from API failed, using fact from file instead :(");
         }
-        
-        return string.IsNullOrEmpty(fact)? "Error: Fact File not available" : fact;
+
+        return string.IsNullOrEmpty(fact) ? "Error: Fact File not available" : fact;
     }
-    
+
     private static List<string> _facts = new List<string>();
 
-    public static void InitializeFacts(string filePath)
+    public static bool InitializeFacts(string filePath)
     {
         try
         {
@@ -147,32 +164,35 @@ class Program
             {
                 string errmsg = $"The fact file at {filePath} does not exist.";
                 Log(errmsg);
-                return;
+                return false;
             }
 
             if (!IsFileReady(filePath))
             {
                 Log("Error: Fact file not ready during initialization.");
-                return;
+                return false;
             }
 
             string[] lines = File.ReadAllLines(filePath);
             if (lines.Length == 0)
             {
                 Log("Error: The fact file is empty.");
-                return;
+                return false;
             }
 
             _facts = new List<string>(lines);
             Log($"Facts loaded successfully. Total facts: {_facts.Count}");
+            return true;
         }
         catch (IOException ex)
         {
             Log($"IOException during fact initialization: {ex.Message}");
+            return false;
         }
         catch (Exception ex)
         {
             Log($"Unexpected error during fact initialization: {ex.Message}");
+            return false;
         }
     }
 
@@ -211,7 +231,7 @@ class Program
             return false;
         }
     }
-    
+
     public static string GetApiKey(string serviceName, string fileName = "apikey.csv")
     {
         try
@@ -245,7 +265,7 @@ class Program
             return null;
         }
     }
-    
+
     private static readonly HttpClient factClient = new HttpClient();
     private const string ApiUrl = "https://api.api-ninjas.com/v1/facts";
 
@@ -284,7 +304,7 @@ class Program
             return "ERROR";
         }
     }
-    
+
     #endregion
 
     #region Shortcut
@@ -395,6 +415,7 @@ class Program
     public static int pasteWaitTime = 400;
     public static int threadAliveTime = 1200000; //20 minutes
     public static int generateNewAccountTime = 600000; // more that 1,5 minutes (10min)
+    public static int retryOnFailTime = 1150; // lil more than a sec
 
     public static MailClient currentClient;
     public static string currentPassword;
@@ -471,7 +492,7 @@ class Program
         staThread.SetApartmentState(ApartmentState.STA);
         staThread.Start();
         staThread.Join();
-        
+
         LogPasted(text);
     }
 
@@ -489,7 +510,7 @@ class Program
     {
         Log($"Pasted: {msg}");
     }
-    
+
     public static void LogToFile(string message, bool skipLine)
     {
         try
@@ -499,7 +520,7 @@ class Program
 
             // Define the log file path
             string logFilePath = Path.Combine(exeDirectory, "log.txt");
-            
+
             string skipLineChar = skipLine ? "\n" : "";
 
             // Append the message to the log file (creates the file if it doesn't exist)
@@ -800,7 +821,7 @@ class Program
                 }
             }
         }
-        
+
         Log("Postherr exit");
 
         #endregion
@@ -912,7 +933,15 @@ class Program
             ShowWindow(handle, SW_HIDE);
         }
 
-        InitializeFacts(factFilePath);
+        if (!InitializeFacts(factFilePath))
+        {
+            Thread timedThread = new Thread(async () =>
+            {
+                Thread.Sleep(retryOnFailTime);
+                Log($"Fact file initialization failed, retry successful: {InitializeFacts(factFilePath)}");
+            });
+            timedThread.Start();
+        }
 
         await SetupTempMailsNShit();
         //UnregisterHotKey(IntPtr.Zero, 1); //TODO do that somewhere else!
@@ -950,7 +979,7 @@ class Program
         //if (currentClient == null) await GenerateMailClient();
 
         string emailaddress = currentClient.Email;
-        
+
         PasteText(emailaddress);
 
         if (runningMSGThread)
@@ -1016,7 +1045,7 @@ class Program
         runningMSGThread = false;
         killAllMSGThreads = true;
     }
-    
+
     [STAThread]
     private static async void OnRandomFactPressed()
     {
