@@ -8,36 +8,23 @@ using WindowsInput.Native;
 using SmorcIRL.TempMail.Models;
 using System.Text.RegularExpressions;
 using System.Text.Json;
+using ABI.Windows.Devices.AllJoyn;
 
 class Program
 {
+    
+    static string versionIdentifier = "v1.4.1.1";
+    
     #region NameGen
 
     static string[] firstWord =
     {
-        "schwarzer", "flotter", "gruener", "harmonischer", "schoener", "schlauer", "durchgeknallter", "gewaschender",
-        "sauberer", "dreckiger", "lakaka", "suechtiger", "ungeliebter", "selbstmordgefährdeter", "depressiver",
-        "gesprengter", "schwimmendes", "geile", "gruselige", "spooky", "schummelnder",
-        "geschwindigkeitsUeberschreitende", "kleiner", "grosser", "veganer", "fleichfressender", "linksversiffter",
-        "gefeierter", "auserwaehlter", "radikaler", "schlechter", "boeser", "guter", "attraktive", "begeisterte",
-        "vieler", "harter", "vollgeschissene", "verschimmelter", "verseuchter", "versiffter", "nutzloser",
-        "angestrengter", "unnoetiger", "halal", "haram", "gespannter", "erregter", "lange", "tiefer", "steifer",
-        "gestreckte", "enge", "feuchte", "unterschriebene", "ausgeleiherte", "fleischiger", "maennlicher", "weibliche",
-        "Steuernhinterziehende", "bombadierter", "gejagter", "politischVerfolgter", "transgender", "homosexueller",
-        "gebleichter", "pythonnutzender", "spielsuechtiger", "rauchender"
+        "funny", "sad", "lovely"
     };
 
     static string[] secondWord =
     {
-        "Klabautermann", "Seefahrer", "BurgerKingArbeiter", "Kuenstler", "Pirat", "Entwickler", "Verb", "Apflel",
-        "Marrokaner", "Gieskanne", "Wetterballon", "Basketball", "Mappe", "Vikinger", "Sitzsackpolster", "CDUWaehler",
-        "Gruenenwaehler", "BMWFahrer", "Helge", "Fahrlehrer", "Huan", "DireStraitsFan", "Schaumkrone", "Wackler",
-        "Investor", "Helium", "Shakespeare", "Meister", "Rhabarbarkuchen", "Geisterbahn", "Schimmel", "Kerzentraeger",
-        "Bierbrauer", "Omelett", "Franzose", "Drache", "Fussende", "Wolkenkratzer", "Mathegenie", "Monkey", "Affe",
-        "Vogelscheuche", "Baum", "Minenschacht", "StuhlTischBank", "Vater", "Yarrack", "Topografie", "Geographie",
-        "Franzose", "Karte", "Alkohol", "Flasche", "Designerstueck", "Spiel", "Taschentuch", "Metalldetektor", "jeans",
-        "Unterhose", "Bomber", "Islam", "schlawiner", "Palestiner", "PythonNutzer", "Gambler", "Spielsuechtiger",
-        "CasinoBesucher", "VegasLover", "Raucher", "Kartoffel", "Rechtschreibfehler", "Check24"
+        "Driver", "Pedestrian", "Biker", "Addict", "Soldier", "JudyHoppsLover69", "Dude"
     };
 
     static int numRange = 200;
@@ -128,9 +115,9 @@ class Program
 
     #region Facts
 
-    const string factFilePath = "Facts.txt";
+    const string factFileName = "Facts.txt";
 
-    public static async Task<string> GetRandomContent(string filePath = factFilePath)
+    public static async Task<string> GetRandomContent(string filePath = factFileName)
     {
         Random random = new Random();
         bool useFile = random.Next(2) == 0;
@@ -161,7 +148,7 @@ class Program
         try
         {
             string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string filePath = Path.Combine(appDirectory, factFilePath);
+            string filePath = Path.Combine(appDirectory, factFileName);
 
             //Just assuming the fact file is fine :)
 
@@ -196,14 +183,14 @@ class Program
         try
         {
             string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string filePath = Path.Combine(appDirectory, factFilePath);
+            string filePath = Path.Combine(appDirectory, factFileName);
 
             Log($"Analyzing issues with the fact file: {filePath}");
 
             // Check if the file exists
             if (!File.Exists(filePath))
             {
-                Log("Error: The fact file seems to not exist.");
+                Log("Error: The fact file seems to not exist, even though it may.");
             }
 
             // Check if the file is accessible
@@ -967,7 +954,7 @@ class Program
     [STAThread]
     static async Task Main()
     {
-        Log("Postherr started", true);
+        Log($"Postherr {versionIdentifier} started", true);
         if (minimizeOnStart)
         {
             var handle = GetConsoleWindow();
@@ -985,7 +972,8 @@ class Program
         }
 
         await SetupTempMailsNShit();
-        //UnregisterHotKey(IntPtr.Zero, 1); //TODO do that somewhere else!
+        
+        Log("Postherr ended");
     }
 
     #region Cooldown because my code is as unstable as my mental condition

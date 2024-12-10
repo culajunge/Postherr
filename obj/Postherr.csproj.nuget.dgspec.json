@@ -83,6 +83,10 @@
               "version": "[6.0.32, 6.0.32]"
             },
             {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[6.0.32, 6.0.32]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[6.0.32, 6.0.32]"
             },
@@ -91,11 +95,19 @@
               "version": "[6.0.32, 6.0.32]"
             },
             {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[6.0.32, 6.0.32]"
+            },
+            {
               "name": "Microsoft.Windows.SDK.NET.Ref",
               "version": "[10.0.22621.31, 10.0.22621.31]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.32, 6.0.32]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
               "version": "[6.0.32, 6.0.32]"
             }
           ],
@@ -111,6 +123,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

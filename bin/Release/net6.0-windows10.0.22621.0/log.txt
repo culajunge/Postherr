@@ -1,131 +1,19 @@
-06.12.2024 15:46 - Disposable Email Address: rightreply103@soscandia.org
-06.12.2024 15:46 - Password: K:m?Nnxe+5
-06.12.2024 15:46 - Hotkey Alt + Q registered for address.
-06.12.2024 15:46 - Hotkey Alt + W registered for password.
-06.12.2024 15:46 - Hotkey Alt + E registered for Username.
-06.12.2024 15:46 - Hotkey Alt + S registered for VeriCode.
-06.12.2024 15:46 - Hotkey Alt + 1 registered for Account REgenerate.
-06.12.2024 15:46 - Hotkey Alt + P registered for Email loop elimination.
-06.12.2024 15:46 - Hotkey Alt + P registered for Pasting random fact.
-06.12.2024 15:47 - Hotkey Username pressed!
-06.12.2024 15:47 - Hotkey pressed!
-06.12.2024 15:47 - Hotkey PSWD pressed!
-06.12.2024 15:52 - Postherr started
-06.12.2024 15:52 - Disposable Email Address: greengrouse41@soscandia.org
-06.12.2024 15:52 - Password: @R}gW)3[T
-06.12.2024 15:52 - Hotkey Username pressed!
-06.12.2024 15:58 - Postherr started
-06.12.2024 15:58 - Disposable Email Address: giganticgoer152@soscandia.org
-06.12.2024 15:58 - Password: y}6PMbV1
-06.12.2024 15:58 - Pasted: A crocodile can run up to a speed of 11 miles per hour
-06.12.2024 15:59 - Pasted: giganticgoer152@soscandia.org
-06.12.2024 15:59 - Pasted: giganticgoer152@soscandia.org
-06.12.2024 15:59 - Message Thread already running
-06.12.2024 16:00 - 
- Postherr started
-06.12.2024 16:00 - Disposable Email Address: hugehoodie166@soscandia.org
-06.12.2024 16:00 - Password: SzT7Y,#}wdD
 
- 06.12.2024 16:04 - Postherr started
- 06.12.2024 16:04 - Disposable Email Address: versedvulnerability63@soscandia.org
- 06.12.2024 16:04 - Password: fC*j,sYz4ig
+10.12.2024 18:35 - Postherr v1.4.1.1 started
+10.12.2024 18:35 - Facts loaded successfully. Total facts: 902
+10.12.2024 18:35 - Disposable Email Address: riperecordist12@soscandia.org
+10.12.2024 18:35 - Password: ^mWpR@S1l(FMmdK
+10.12.2024 18:35 - Failed to register hotkey Alt + Q.
+10.12.2024 18:35 - Failed to register hotkey Alt + W.
+10.12.2024 18:35 - Failed to register hotkey Alt + E.
+10.12.2024 18:35 - Failed to register hotkey Alt + S.
+10.12.2024 18:35 - Failed to register hotkey Alt + 1.
+10.12.2024 18:35 - Failed to register hotkey Alt + P.
+10.12.2024 18:35 - Failed to register hotkey Alt + P.
 
-06.12.2024 23:48 - Postherr started
-06.12.2024 23:48 - Facts loaded successfully. Total facts: 901
-06.12.2024 23:48 - Disposable Email Address: lowlyloincloth53@soscandia.org
-06.12.2024 23:48 - Password: Nv1,S1z7$U
-06.12.2024 23:48 - Pasted: The average person's left hand does 56% of the typing. 
-06.12.2024 23:48 - Pasted: Ancient Egyptian priests would pluck every hair from their bodies.
-06.12.2024 23:48 - Pasted: The eight most popular foods to cause food allergies are: milk, eggs, wheat, peanuts, soy, tree nuts, fish, and shellfish
-
-06.12.2024 23:49 - Postherr started
-06.12.2024 23:49 - Facts loaded successfully. Total facts: 901
-06.12.2024 23:49 - Disposable Email Address: rightrazor87@soscandia.org
-06.12.2024 23:49 - Password: A2eJ:pHLp)+G
-06.12.2024 23:49 - Pasted: Almonds are a member of the peach family.
-06.12.2024 23:49 - Actually using API at some point!
-06.12.2024 23:49 - Pasted: 2.5 cans of Spam are consumed every second in the United States
-06.12.2024 23:49 - Actually using API at some point!
-06.12.2024 23:49 - Pasted: The word "lethologica" describes the state of not being able to remember the word you want
-06.12.2024 23:50 - Actually using API at some point!
-06.12.2024 23:50 - Pasted: Asparagus comes in three colors: green, white and purple
-06.12.2024 23:50 - Actually using API at some point!
-06.12.2024 23:50 - Pasted: Wheel of Fortune star Vanna White holds the record for putting her hands together approximately 140,000 times to clap
-06.12.2024 23:50 - Actually using API at some point!
-06.12.2024 23:50 - Pasted: Chameleon is derived from the Greek, meaning "little lion."
-06.12.2024 23:50 - Actually using API at some point!
-06.12.2024 23:50 - Pasted: One ton of grapes can produce 720 bottles of wine
-06.12.2024 23:50 - Actually using API at some point!
-06.12.2024 23:50 - Pasted: Nose prints are used to identify dogs, much like humans use fingerprints
-06.12.2024 23:50 - Actually using API at some point!
-06.12.2024 23:50 - Pasted: The first movie to ever cost $100 million to make is Terminator 2: Judgment Day in 1991
-
-06.12.2024 23:52 - Postherr started
-06.12.2024 23:52 - Facts loaded successfully. Total facts: 901
-06.12.2024 23:52 - Disposable Email Address: simplisticsugar25@soscandia.org
-06.12.2024 23:52 - Password: )O{q0XpnTjd
-06.12.2024 23:52 - Actually using API at some point!
-06.12.2024 23:52 - Pasted: According to research, the most productive workday is Tuesday and the least productive is Friday
-06.12.2024 23:52 - Actually using API at some point!
-06.12.2024 23:52 - Pasted: The first time there was an instance where they had a separate toilet for women and men was in 1739 at a ball in Paris
-06.12.2024 23:52 - Pasted: The average cough comes out of your mouth at 60 miles (96.5 km) per hour.
-06.12.2024 23:52 - Actually using API at some point!
-06.12.2024 23:52 - Pasted: Hershey's Kisses are called that because the machine that makes themlooks like it's kissing the conveyor belt.
-06.12.2024 23:52 - Actually using API at some point!
-06.12.2024 23:52 - Pasted: A common name for pincurls is also spitcurls because woman sometimes wet their hair with their saliva before curling it
-06.12.2024 23:52 - Actually using API at some point!
-06.12.2024 23:52 - Pasted: Antarctica is the only land on our planet that is not owned by any country
-06.12.2024 23:52 - Pasted: The average shelf-life of a latex condom is about two years.
-06.12.2024 23:52 - Pasted: Intelligent people have more zinc and copper in their hair.
-06.12.2024 23:53 - Pasted: At the height of its power in 400 BC, the Greek city of Sparta had 25,000 citizens and 500,000 slaves.
-
-09.12.2024 20:26 - Postherr started
-09.12.2024 20:26 - Facts loaded successfully. Total facts: 902
-09.12.2024 20:26 - Disposable Email Address: murkymaid111@soscandia.org
-09.12.2024 20:26 - Password: p)tXMKc7
-
-09.12.2024 20:27 - Postherr started
-09.12.2024 20:27 - Facts loaded successfully. Total facts: 902
-09.12.2024 20:27 - Disposable Email Address: worstwell114@soscandia.org
-09.12.2024 20:27 - Password: 26hNP:QTgw,9mYY3
-
-09.12.2024 20:27 - Postherr started
-09.12.2024 20:27 - Facts loaded successfully. Total facts: 902
-09.12.2024 20:27 - Disposable Email Address: glibgolfer19@soscandia.org
-09.12.2024 20:27 - Password: Er&exrExT_5}e#
-
-10.12.2024 16:39 - Postherr started
-10.12.2024 16:39 - Facts loaded successfully. Total facts: 902
-10.12.2024 16:39 - Disposable Email Address: perfumedpenguin187@soscandia.org
-10.12.2024 16:39 - Password: $)qGdldHYY{op3
-10.12.2024 16:39 - Pasted: In the U.S., the milk production per dairy cow is approximately 12,000 pounds
-10.12.2024 16:39 - Pasted: In the U.S. the most common excuse made to get out of paying a ticket is to say they missed the sign
-10.12.2024 16:39 - Pasted: In 1933, Mickey Mouse is believed to have received 800,000 fan letters
-10.12.2024 16:39 - Pasted: Lake Ontario was originally named Lake St. Louis
-10.12.2024 16:40 - Pasted: Around 50% of all Wikipedia vandalism is caught by a single computer program with more than 90% accuracy.
-10.12.2024 16:40 - Cooldown in effect, try again in: 10.12.2024 16:40:05
-10.12.2024 16:40 - Cooldown in effect, try again in: 10.12.2024 16:40:05
-10.12.2024 16:40 - Pasted: The 3 most valuable brand names on earth: Marlboro, Coca-Cola, and Budweiser, in that order.
-10.12.2024 16:40 - Cooldown in effect, try again in: 10.12.2024 16:40:06
-10.12.2024 16:40 - Cooldown in effect, try again in: 10.12.2024 16:40:06
-10.12.2024 16:40 - Cooldown in effect, try again in: 10.12.2024 16:40:06
-10.12.2024 16:40 - Pasted: In 1876, Maria Spelterina was the first woman to ever cross Niagara Falls on a high wire
-10.12.2024 16:40 - Cooldown in effect, try again in: 10.12.2024 16:40:06
-10.12.2024 16:40 - Pasted: A surfer once sued another surfer for "stealing his wave." The case was thrown out because the court was unable to put a price on "pain and suffering" endured by the surfer watching someone else ride "his" wave
-10.12.2024 16:40 - Pasted: For every 'normal' webpage, there are five porn pages.
-10.12.2024 16:40 - Pasted: Elvis Presley had a twin brother named Jesse Garon Presley who died at birth
-
-10.12.2024 16:40 - Postherr started
-10.12.2024 16:40 - Facts loaded successfully. Total facts: 902
-10.12.2024 16:40 - Disposable Email Address: otherorganism76@soscandia.org
-10.12.2024 16:40 - Password: GRad3[?P.
-
-10.12.2024 16:40 - Postherr started
-10.12.2024 16:40 - Facts loaded successfully. Total facts: 902
-10.12.2024 16:40 - Disposable Email Address: quixoticquote132@soscandia.org
-10.12.2024 16:40 - Password: fZkQ]8]cb$D
-
-10.12.2024 16:41 - Postherr started
-10.12.2024 16:41 - Facts loaded successfully. Total facts: 902
-10.12.2024 16:41 - Disposable Email Address: tastelesstog32@soscandia.org
-10.12.2024 16:41 - Password: :#7FcPhS,%v
+10.12.2024 18:38 - Postherr v1.4.1.1 started
+10.12.2024 18:38 - Facts loaded successfully. Total facts: 902
+10.12.2024 18:38 - Disposable Email Address: stripedsleepiness18@soscandia.org
+10.12.2024 18:38 - Password: yG2vP8J+5
+10.12.2024 18:39 - Pasted: When the only queen ant dies, so does the entire colony, because no new workers are born
+10.12.2024 18:39 - Pasted: During the high feeding season, it has been estimated that an adult blue whale can eat up to 40 million krill in one day. (Krill are shrimp like creatures)

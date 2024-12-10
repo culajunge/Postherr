@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Postherr")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b78a323d47654aaeb84dae0fda6f3379387fef74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e42cca3df09c7a325aca6e3f56953d28de36b21f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Postherr")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Postherr")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,85 @@
+
+10.12.2024 18:55 - Postherr v1.4.1.1 started
+10.12.2024 18:55 - IOException during fact initialization: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 18:55 - Analyzing issues with the fact file: C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt
+10.12.2024 18:55 - Error: The fact file seems to not exist, even though it may.
+10.12.2024 18:55 - Error: The fact file is locked or inaccessible due to an IO issue: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 18:55 - IOException during fact initialization: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 18:55 - Analyzing issues with the fact file: C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt
+10.12.2024 18:55 - Error: The fact file seems to not exist, even though it may.
+10.12.2024 18:55 - Error: The fact file is locked or inaccessible due to an IO issue: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 18:55 - Fact file initialization failed, retry successful: False
+10.12.2024 18:55 - Disposable Email Address: knowingkiss162@soscandia.org
+10.12.2024 18:55 - Password: 8rAn:Q6^
+
+10.12.2024 19:00 - Postherr v1.4.1.1 started
+10.12.2024 19:00 - IOException during fact initialization: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:00 - Analyzing issues with the fact file: C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt
+10.12.2024 19:00 - Error: The fact file seems to not exist, even though it may.
+10.12.2024 19:00 - Error: The fact file is locked or inaccessible due to an IO issue: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:00 - IOException during fact initialization: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:00 - Analyzing issues with the fact file: C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt
+10.12.2024 19:00 - Error: The fact file seems to not exist, even though it may.
+10.12.2024 19:00 - Error: The fact file is locked or inaccessible due to an IO issue: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:00 - Fact file initialization failed, retry successful: False
+10.12.2024 19:00 - Disposable Email Address: humiliatinghypotenuse169@soscandia.org
+10.12.2024 19:00 - Password: Sh2]wgYf
+10.12.2024 19:00 - Failed to register hotkey Alt + Q.
+10.12.2024 19:00 - Failed to register hotkey Alt + W.
+10.12.2024 19:00 - Failed to register hotkey Alt + E.
+10.12.2024 19:00 - Failed to register hotkey Alt + S.
+10.12.2024 19:00 - Failed to register hotkey Alt + 1.
+10.12.2024 19:00 - Failed to register hotkey Alt + P.
+10.12.2024 19:00 - Failed to register hotkey Alt + P.
+
+10.12.2024 19:03 - Postherr v1.4.1.1 started
+10.12.2024 19:03 - IOException during fact initialization: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:03 - Analyzing issues with the fact file: C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt
+10.12.2024 19:03 - Error: The fact file seems to not exist, even though it may.
+10.12.2024 19:03 - Error: The fact file is locked or inaccessible due to an IO issue: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:03 - Disposable Email Address: knowingknock42@soscandia.org
+10.12.2024 19:03 - Password: QP1WDxJXJP+K
+10.12.2024 19:03 - Failed to register hotkey Alt + Q.
+10.12.2024 19:03 - Failed to register hotkey Alt + W.
+10.12.2024 19:03 - Failed to register hotkey Alt + E.
+10.12.2024 19:03 - Failed to register hotkey Alt + S.
+10.12.2024 19:03 - Failed to register hotkey Alt + 1.
+10.12.2024 19:03 - Failed to register hotkey Alt + P.
+10.12.2024 19:03 - Failed to register hotkey Alt + P.
+10.12.2024 19:03 - IOException during fact initialization: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:03 - Analyzing issues with the fact file: C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt
+10.12.2024 19:03 - Error: The fact file seems to not exist, even though it may.
+10.12.2024 19:03 - Error: The fact file is locked or inaccessible due to an IO issue: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:03 - Fact file initialization failed, retry successful: False
+
+10.12.2024 19:04 - Postherr v1.4.1.1 started
+10.12.2024 19:04 - IOException during fact initialization: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:04 - Analyzing issues with the fact file: C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt
+10.12.2024 19:04 - Error: The fact file seems to not exist, even though it may.
+10.12.2024 19:04 - Error: The fact file is locked or inaccessible due to an IO issue: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:04 - Disposable Email Address: harmlessheed105@soscandia.org
+10.12.2024 19:04 - Password: mCWr9K@3
+10.12.2024 19:04 - Failed to register hotkey Alt + Q.
+10.12.2024 19:04 - Failed to register hotkey Alt + W.
+10.12.2024 19:04 - Failed to register hotkey Alt + E.
+10.12.2024 19:04 - Failed to register hotkey Alt + S.
+10.12.2024 19:04 - Failed to register hotkey Alt + 1.
+10.12.2024 19:04 - Failed to register hotkey Alt + P.
+10.12.2024 19:04 - Failed to register hotkey Alt + P.
+10.12.2024 19:04 - IOException during fact initialization: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:04 - Analyzing issues with the fact file: C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt
+10.12.2024 19:04 - Error: The fact file seems to not exist, even though it may.
+10.12.2024 19:04 - Error: The fact file is locked or inaccessible due to an IO issue: Could not find file 'C:\Users\Neu\source\repos\Postherr\bin\Release\net6.0-windows10.0.22621.0\win-x64\Facts.txt'.
+10.12.2024 19:04 - Fact file initialization failed, retry successful: False
+
+10.12.2024 19:06 - Postherr v1.4.1.1 started
+10.12.2024 19:06 - Facts loaded successfully. Total facts: 902
+10.12.2024 19:06 - Disposable Email Address: irresponsibleinsurgence54@soscandia.org
+10.12.2024 19:06 - Password: L}h6S@umR3xg8:of
+10.12.2024 19:06 - Failed to register hotkey Alt + Q.
+10.12.2024 19:06 - Failed to register hotkey Alt + W.
+10.12.2024 19:06 - Failed to register hotkey Alt + E.
+10.12.2024 19:06 - Failed to register hotkey Alt + S.
+10.12.2024 19:06 - Failed to register hotkey Alt + 1.
+10.12.2024 19:06 - Failed to register hotkey Alt + P.
+10.12.2024 19:06 - Failed to register hotkey Alt + P.
