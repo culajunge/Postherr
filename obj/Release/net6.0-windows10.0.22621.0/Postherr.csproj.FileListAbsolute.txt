@@ -20,3 +20,4 @@ C:\Users\Neu\source\repos\Postherr\obj\Release\net6.0-windows10.0.22621.0\Posthe
 C:\Users\Neu\source\repos\Postherr\obj\Release\net6.0-windows10.0.22621.0\Postherr.genruntimeconfig.cache
 C:\Users\Neu\source\repos\Postherr\obj\Release\net6.0-windows10.0.22621.0\ref\Postherr.dll
 C:\Users\Neu\source\repos\Postherr\obj\Release\net6.0-windows10.0.22621.0\Postherr.csproj.Up2Date
+C:\Users\Neu\source\repos\Postherr\obj\Release\net6.0-windows10.0.22621.0\Postherr.sourcelink.json

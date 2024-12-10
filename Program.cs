@@ -11,8 +11,6 @@ using System.Text.Json;
 
 class Program
 {
-    
-    
     #region NameGen
 
     static string[] firstWord =
@@ -158,22 +156,14 @@ class Program
 
     private static List<string> _facts = new List<string>();
 
-    public static bool InitializeFacts(string filePath)
+    public static bool InitializeFacts()
     {
         try
         {
-            if (!File.Exists(filePath))
-            {
-                string errmsg = $"The fact file at {filePath} does not exist.";
-                Log(errmsg);
-                return false;
-            }
+            string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string filePath = Path.Combine(appDirectory, factFilePath);
 
-            if (!IsFileReady(filePath))
-            {
-                Log("Error: Fact file not ready during initialization.");
-                return false;
-            }
+            //Just assuming the fact file is fine :)
 
             string[] lines = File.ReadAllLines(filePath);
             if (lines.Length == 0)
@@ -189,12 +179,61 @@ class Program
         catch (IOException ex)
         {
             Log($"IOException during fact initialization: {ex.Message}");
+            AnalyzeFactFileIssue();
             return false;
         }
         catch (Exception ex)
         {
             Log($"Unexpected error during fact initialization: {ex.Message}");
+            AnalyzeFactFileIssue();
             return false;
+        }
+    }
+    
+
+    static void AnalyzeFactFileIssue()
+    {
+        try
+        {
+            string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string filePath = Path.Combine(appDirectory, factFilePath);
+
+            Log($"Analyzing issues with the fact file: {filePath}");
+
+            // Check if the file exists
+            if (!File.Exists(filePath))
+            {
+                Log("Error: The fact file seems to not exist.");
+            }
+
+            // Check if the file is accessible
+            try
+            {
+                using (FileStream fs = File.Open(filePath, FileMode.Open, FileAccess.Read))
+                {
+                    Log("Fact file exists and is accessible.");
+                }
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Log("Error: The application does not have the required permissions to access the fact file.");
+                return;
+            }
+            catch (IOException ex)
+            {
+                Log($"Error: The fact file is locked or inaccessible due to an IO issue: {ex.Message}");
+                return;
+            }
+
+            // Check if the file is empty
+            if (new FileInfo(filePath).Length == 0)
+            {
+                Log("Error: The fact file is empty.");
+            }
+        }
+        catch (Exception ex)
+        {
+            Log($"Unexpected error during fact file analysis: {ex.Message}");
         }
     }
 
@@ -935,12 +974,12 @@ class Program
             ShowWindow(handle, SW_HIDE);
         }
 
-        if (!InitializeFacts(factFilePath))
+        if (!InitializeFacts())
         {
             Thread timedThread = new Thread(async () =>
             {
                 Thread.Sleep(retryOnFailTime);
-                Log($"Fact file initialization failed, retry successful: {InitializeFacts(factFilePath)}");
+                Log($"Fact file initialization failed, retry successful: {InitializeFacts()}");
             });
             timedThread.Start();
         }
