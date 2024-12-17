@@ -445,6 +445,9 @@ class Program
     public static int generateNewAccountTime = 600000; // more that 1,5 minutes (10min)
     public static int retryOnFailTime = 1150; // lil more than a sec
 
+    public static bool typeOut = false;
+    public static int typeOutDelayMS = 100;
+
     public static MailClient currentClient;
     public static string currentPassword;
     public static string currentUsername;
@@ -522,6 +525,73 @@ class Program
         staThread.Join();
 
         LogPasted(text);
+    }
+    
+    private static bool RequiresShift(char character)
+    {
+        string specialCharacters = "~!@#$%^&*()_+{}|:\"<>?";
+        return specialCharacters.Contains(character);
+    }
+    private static bool RequiresAltGr(char character)
+    {
+        // Characters that require AltGr include @, €, etc.
+        string altGrCharacters = "@€łŁđĐ|\\~{}[]";
+        return altGrCharacters.Contains(character);
+    }
+
+    [STAThread]
+    static void TypeOutText(string text)
+    {
+        Thread staThread = new Thread(() =>
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(text))
+                {
+                    throw new ArgumentException("Text to simulate cannot be null or empty.", nameof(text));
+                }
+
+                foreach (char character in text)
+                {
+                    // Check if the character requires special handling
+                    if (RequiresAltGr(character))
+                    {
+                        sim.Keyboard.KeyDown(VirtualKeyCode.MENU);
+                        sim.Keyboard.TextEntry(character);
+                        sim.Keyboard.KeyUp(VirtualKeyCode.MENU);
+                        sim.Keyboard.KeyUp(VirtualKeyCode.CONTROL);
+                        sim.Keyboard.KeyDown(VirtualKeyCode.CONTROL);
+                    }
+                    else if (char.IsUpper(character) || RequiresShift(character))
+                    {
+                        sim.Keyboard.KeyDown(VirtualKeyCode.SHIFT);
+                        sim.Keyboard.TextEntry(character);
+                        sim.Keyboard.KeyUp(VirtualKeyCode.SHIFT);
+                    }
+                    else
+                    {
+                        sim.Keyboard.TextEntry(character);
+                    }
+                    Thread.Sleep(typeOutDelayMS);
+                }
+            }
+            catch (Exception ex)
+            {
+                Log($"Typeout Error, maybe dont click that fast, or: {ex.ToString()}");
+            }
+        });
+
+        staThread.SetApartmentState(ApartmentState.STA);
+        staThread.Start();
+        staThread.Join();
+
+        LogPasted(text);
+    }
+
+    static void OutputText(string txt)
+    {
+        if(typeOut)TypeOutText(txt);
+        else PasteText(txt);
     }
 
     #endregion
@@ -1009,7 +1079,7 @@ class Program
 
         string emailaddress = currentClient.Email;
 
-        PasteText(emailaddress);
+        OutputText(emailaddress);
 
         if (runningMSGThread)
         {
@@ -1028,7 +1098,7 @@ class Program
     {
         if (!CanExecute()) return;
 
-        PasteText(currentPassword!);
+        OutputText(currentPassword!);
     }
 
     [STAThread]
@@ -1036,7 +1106,7 @@ class Program
     {
         if (!CanExecute()) return;
 
-        PasteText(currentUsername!);
+        OutputText(currentUsername!);
     }
 
     public static int verificationCodeCounter = 0;
@@ -1051,7 +1121,7 @@ class Program
             verificationCodeCounter = 0;
         }
 
-        PasteText(currentVerificationCodes[verificationCodeCounter]);
+        OutputText(currentVerificationCodes[verificationCodeCounter]);
         verificationCodeCounter++;
     }
 
@@ -1081,7 +1151,7 @@ class Program
         if (!CanExecute()) return;
 
         string fact = await GetRandomContent();
-        PasteText(fact);
+        OutputText(fact);
     }
 
     #endregion

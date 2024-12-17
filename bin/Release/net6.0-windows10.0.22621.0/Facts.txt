@@ -899,4 +899,790 @@ The microcontroller inside a MacBook charger is about as powerful as the origina
 Tandy TRS-80 Model I computer radiated so much interference that many games were designed so that an AM radio next to the computer could be used to provide sounds.
 An Apple laptop stinks. One 2001 iBook model used a glue that, after 12-18 months, may begin to smell like human body odor. It is so strong that repairs are difficult because the smell makes people nauseous.
 CAPTCHA is an acronym for “Completely Automated Public Turing test to tell Computers and Humans Apart”
-
+    Movie trailers got their name because they were originally shown after the movie.
+    Rubber bands last longer when refrigerated.
+    The real name of Monopoly mascot Uncle Pennybags is Milburn Pennybags.
+    Women blink nearly twice as much as men.
+    Pogonophobia is the fear of beards.
+    Oreo has made enough cookies to span five back and forth trips to the moon.
+    Edgar Allan Poe married his thirteen-year-old cousin.
+    Salt used to be a currency.
+    Your fingernails grow faster on your dominant hand.
+    In 10 minutes, a hurricane releases more energy than all the world’s nuclear weapons combined.
+    Sloths can hold their breath for longer than dolphins.
+    A giraffe can go longer without water than a camel can.
+    On average, 100 people choke to death on ballpoint pens every year.
+    A dragonfly has a lifespan of only 24 hours.
+    On average, a human being will spend up to two weeks kissing in their lifetime.
+    The average adult spends more time on the toilet than they do exercising.
+    Honey is the only food that does not spoil.
+    Toy Story helped sell the Etch-a-Sketch.
+    Four out of five children recognize the Mcdonald’s logo at three years old.
+    Barbie and Ken broke up in 2004. (They got back together in 2011.)
+    One single teaspoon of honey represents the life work of 12 bees.
+    It’s impossible to tickle yourself.
+    Queen Elizabeth II is a trained mechanic.
+    It’s impossible for you to lick your own elbow.
+    Cap’n Crunch’s full name is Captain Horatio Magellan Crunch.
+    Venus is the only planet that rotates clockwise.
+    The Main Library at Indiana University sinks over an inch every year. Engineers failed to account for the weight of all the books that it would eventually hold.
+    Dolphins give each other names.
+    Frank Sinatra was offered the starring role in Die Hard when he was in his 70s.
+    One man set a world record by putting on 260 T-shirts at once.
+    There is a metallic asteroid shaped like a dog bone named “Kleopatra.”
+    A “jiffy” is about one trillionth of a second.
+    The cigarette lighter was invented before the match.
+    Dragonflies have six legs but can’t walk.
+    It’s possible to lead a cow upstairs… but not downstairs.
+    Pope John Paul II was an honorary Harlem Globetrotter.
+    Mulan has the highest kill-count of any Disney character.
+    3.6 cans of Spam are consumed each second.
+    The average American looks at eight houses before buying one.
+    Most pandas in the world are on loan from China.
+    A snail can sleep for three years.
+    Your stomach produces a new layer of mucus every two weeks so that it doesn’t digest itself.
+    Right handed people, on average, live nine years longer than left handed people.
+    Women have more tastebuds than men.
+    Women see more colors than men.
+    People used to answer the phone by saying “ahoy” instead of “hello.”
+    The number of dimples on a regulation golf ball is 336 dimples.
+    Al Capone’s business card said he was a used furniture dealer.
+    Taco Bell was named after its owner, Glen Bell.
+    The average American spends about 2.5 days a year looking for lost items.
+    “Go” is the shortest complete sentence in the English language.
+    Only one person in two billion will live to be 116 or older.
+    The U.S. Air Force introduced Bob Ross to painting.
+    A crocodile cannot stick its tongue out.
+    Punctuation wasn’t always a part of our written language.
+    Alaska is the only state whose name is on one row on a keyboard.
+    There are 32 muscles in a cat’s ear.
+    A giraffe can clean its ears with its 21-inch tongue.
+    The King of Hearts is the only king in a deck of cards without a mustache.
+    Animals that lay eggs don’t have belly buttons.
+    Nutmeg is extremely poisonous if injected intravenously.
+    Montpelier, Vermont, is the only U.S. capital without a McDonald’s.
+    Americans, on average, eat 18 acres of pizza every day.
+    Pound cake originally included a pound of all of its ingredients.
+    The chicken and the ostrich are the closest living relatives of the Tyrannosaurus rex.
+     About 11,000 Americans injure themselves while trying out weird sexual positions per year.
+    More than two-thirds of millennials sleep nude.
+     The only real person to be a Pez head was Betsy Ross.
+    Queen Elizabeth II’s cows sleep on waterbeds.
+    If you plug your nose, you can’t tell the difference between an apple, a potato, and an onion.
+    A British teen changed his name to “Captain Fantastic Faster Than Superman Spiderman Batman Wolverine Hulk And The Flash Combined.”
+    Basenji dogs are the only breed that doesn’t bark.
+    You can’t hunt camels in Arizona.
+    On average, people fear spiders more than they do death.
+     Junk food is as addictive as drugs.
+    “Schoolmaster” is an anagram of “the classroom.”
+    The sun makes up more than 99 percent of our solar system’s mass.
+    Hummingbirds are the only animals that can fly backward.
+    Many oranges are actually green.
+    There are 293 ways to make a change for a dollar.
+    The average person has four to six dreams a night.
+    It’s possible to turn peanut butter into diamonds.
+    The largest bill to go into circulation in the United States was a $10,000 note.
+    You spray 2.5 drops of saliva per word.
+    The tallest supported bamboo sculpture is more than 164-feet high.
+    Messages from your brain travel along your nerves at up to 200 miles per hour.
+    Finland has the most metal bands per capita.
+    Massachusetts is home to Busta Rhymes Island.
+    There’s a tiny home in Virginia called the “Spite House” because that’s why it was built.
+    An earthquake might have shrunk Mount Everest.
+    Apple seeds contain cyanide.
+    The cheesiest pizza ever was topped with 154 varieties of cheese.
+    There are giant technicolor squirrels in India.
+    A shark is the only animal that can blink both its eyes.
+    You would likely “mutate” in space without a spacesuit.
+    In most advertisements, including newspapers, the time displayed on a watch is 10:10.
+    There are around 16 million people alive today that are direct descendants of Genghis Khan.
+    An ostrich’s eye is bigger than its brain.
+    There’s a city called “Rome” on every continent except Antarctica.
+    The opposite sides of a die will always add up to seven.
+    Marie Curie’s 100-year-old belongings are still radioactive.
+    A dentist invented the electric chair.
+    Barbie’s full name is Barbara Millicent Roberts.
+    The inventor of Pringles is buried in a Pringles can.
+    A cubic inch of human bone can bear the weight of five standard pickup trucks.
+    Sweat doesn’t smell bad.
+    The only domestic animal not mentioned in the Bible is the cat.
+    Thirty-five percent of the people who use personal ads or online apps for dating are already married.
+    In old Christian art, good angels were red and Satan was blue.
+    Ketchup was used medicinally in the early 1800s.
+    Every time you lick a stamp, you consume one-tenth of a calorie.
+    The first Nerf ball package claimed the toy “can’t hurt babies or old people.”
+    The tool used to measure your feet at the shoe store is called a “Brannock Device.”
+    According to the Bible, the chicken came before the egg.
+    You produce about six pounds of stool per week.
+    Cats can’t taste sweet things because of a genetic defect.
+    A frigate bird can sleep while it flies.
+    Octopuses and squid have three hearts.
+     The average person falls asleep in seven minutes.
+    Those metal studs on your jeans have a purpose. They’re placed on certain spots to add extra support where the denim is more likely to wear out and rip.
+    The most common name in the world is Mohammed.
+    Women hiccup less than men.
+    A cat’s jaw cannot move sideways.
+    In 2016, Mozart sold more CDs than Beyonce.
+    Slinkies are 82 feet long.
+    Most car horns are in the key of F.
+    Riding roller coasters can help you pass kidney stones.
+    “Dreamt” is the only word in the English language that ends with “mt.”
+    Jupiter is twice as large as all the other planets combined.
+    A pig’s orgasm lasts for 30 minutes.
+    The Super Soaker was designed and invented by a NASA engineer.
+    In ancient Egypt, priests plucked EVERY hair from their bodies, including their eyebrows and eyelashes.
+    Your body contains about 100,000 miles of blood vessels.
+    New Jersey grows two-thirds of the world’s eggplants.
+    Ravens know when someone is spying on them
+    There is only one walled city in North America.
+    The first email was sent by Ray Tomlinson to himself in 1971.
+    You are 13.8 percent more likely to die on your birthday.
+    Mosquitoes are attracted to people who just ate bananas.
+    More Monopoly money is printed in a year, than real money throughout the world.
+    Space travel makes mice run in loops.
+    Emus and kangaroos cannot walk backward.
+    The average American produces 4.5 pounds of trash per day.
+    Almonds are members of the peach family.
+    The footprints made on the moon will be there for 100 million years.
+    A Greek-Canadian man invented the “Hawaiian” pizza.
+    Antarctica is the largest unclaimed territory on Earth.
+    The largest scrambled eggs ever made weighed nearly 3.5 tons.
+    Flamingos can only eat with their heads upside down.
+    Playing dance music can help ward off mosquitoes.Reindeer like to eat bananas.
+ Astronauts are not allowed to eat beans before they go into space because passing wind in a spacesuit damages them.
+There are 10 times more stars in the night sky than grains of sand in the world’s deserts and beaches.
+A piece of paper can be folded no more than 9 times.
+The flea can jump 350 times its body length.
+The placement of a donkey’s eyes in its’ head enables it to see all four feet at all times.
+Honey is the only natural food made without destroying any life.
+The name Wendy was made up for the book “Peter Pan.”
+ Our eyes are always the same size from birth.
+ A chameleon can move its eyes in two different directions at the same time.
+ It’s impossible to sneeze with your eyes open.
+Bees have 5 eyes.
+Most collect calls are made on father’s day.
+The Oscars given out during World War II were made of wood.
+Napoleon’s penis was sold to an American Urologist for $40,000.
+The average person with the average stride living until 80 will walk a distance of around 110,000 miles. Which is the equivalent of walking about 5 times around the Earth, right on the equator.
+The thumbnail grows the slowest and the middle nail the fastest, nearly four times faster than toenails.
+A pound of potato chips costs two hundred times more than a pound of potatoes.
+The average person spends 6 months of their life sitting at red lights.
+The average American/Canadian will eat about 11.9 pounds of cereal per year!
+Barbie’s measurements, if she were life-size, would be 39-29-33.
+You spend 92 days of your life on the toilet.
+On average, Americans’ favorite smell is banana.
+One-quarter of your body’s bones are in your feet.
+Americans eat an estimated 13 billion hamburgers each year.
+Dexterous comes from the Latin word dexter, meaning “on the right side.” Since most people are right-handed, and therefore do things more easily with their right hand.
+Maine is the only state whose name is just one syllable.
+Airlines saved $40,000 in 1987 by eliminating one olive from each salad served in first-class.
+Hershey’s makes one million miles of Twizzlers every year.Dr. Seuss invented the word “nerd.”
+Stewardesses is the longest word typed with only the left hand.
+“Spoonfeed” is the longest English word with its letters in reverse alphabetical order.
+The “pound” key on your keyboard (#) is called an octotroph.
+TYPEWRITER is the longest word you can type using only the letters on one row of the keyboard.
+The infinity sign is called a lemniscate.
+No word in the English language rhymes with “MONTH.”
+The most common password is “123456.”
+The “dot” over the letter “i” is called a tittle.
+Sleeping through summer is called “estivation.”
+A group of hippos is called a “bloat.”
+Rainbows were called “bows of promise” in Victorian English.
+The lint in the bottom of your pocket has a name, gnurr.
+If you open your eyes in a pitch-black room, the color you’ll see is called “eigengrau.”
+A Harry Potter book filled with typos sold for $90,000The state of Alaska has the most people per population that walk to work in the whole of the United States.
+The busiest stretch of highway in the US is New York’s George Washington Bridge.
+Ropesville, Lariat, and Loop are all towns in Texas.
+Venetian blinds were invented in Japan.
+In Venice, Venetian blinds are known as ‘Persian blinds.’
+If you head directly south from Detroit, the first foreign country you will enter is Canada.
+One in every three people in Israel uses a mobile phone.
+Sixty percent of Liechtenstein’s GDP is generated from the sale of false teeth.
+In the US, 166,875,000,000 pieces of mail are delivered each year.
+Oklahoma has the highest population of Native Americans in the US, and it has no Indian Reservations.
+The Statue of Liberty’s fingernails weigh about 100 pounds apiece.
+In Kenya, they drive on whichever side of the street is smoother.
+The state of Maryland has no natural lakes.
+JELL-O was declared the official state snack of Utah in January 2001.
+Scandinavian folklore states that trolls only come out at night because sunlight would turn them to stone.
+1,525,000,000 miles of telephone wire are strung across the United States.
+Wyoming Valley is in Pennsylvania, making it difficult to locate.
+After Canada and Mexico, Russia is the US’s nearest neighbor, with Siberia just 56 miles from Alaska.
+The groom’s parents pay for weddings in Thailand.
+The US had a state called Franklin in 1784, which was later incorporated into Tennessee.
+In Tibet, polyandry allows many men, usually brothers, to marry a single woman.
+The coastline around Lake Sakawea in North Dakota is longer than the California coastline along the Pacific Ocean.
+Brooklyn is Dutch for ‘broken valley.’
+Danishes are called Vienna cakes in Denmark, and Spanish rice is unknown in Spain.
+Birkenhead Park inspired New York’s Central Park as it was the world’s first urban park.
+The city of Nottingham was the first in the UK to have Braille signs.
+Minnesota has 99 lakes named Mud Lake.
+At the turn of the century, the New Brighton Tower was taller than the Blackpool Tower.
+Fort Worth, Texas, was never a fort.
+Burmese women believe that having sex while brewing beer will make it bitter.
+Kitsap County, Washington, was originally called Slaughter County.
+Saunas outnumber cars in Finland.
+Argentina’s name means ‘Land of Silver,’ yet there is very little silver there.
+California raises the most turkeys in the US.
+America’s first stock exchange was the Philadelphia Stock Exchange, established in 1791.
+Bagpipes were introduced to the British Isles by the Romans.
+Antarctica is visited by over 10,000 tourists a year.
+The Pony Express lasted only one year, from 1860 to 1861.
+Four states have capital cities beginning with the same letter as their states: Dover, Honolulu, Indianapolis, and Oklahoma City.
+Andorra has the longest average lifespan at 83.49 years.
+Oregon has the most ghost towns of any state.
+Construction of the Notre Dame Cathedral in Strasbourg started in 1015 and was completed in 1439.
+There are more Rolls-Royces in Hong Kong than anywhere else in the world.
+Japan has 130 times more people per square mile than Montana.
+The most expensive real estate is in Tokyo, with 57th Street in New York second.
+Mount Everest grows about 4 mm per year due to tectonic activity.
+Colchester Castle was built around the podium of the Roman temple of Claudius, creating the largest Norman keep in Britain.
+Japanese rickshaws were invented by an American missionary, Reverend Jonathan Scobie.
+A three-line ad in Tokyo’s newspaper costs £1,800 per day.
+Antarctica has only one ATM machine.
+Hawaiian lore says the earth mother Papa and sky father Wakea birthed the Hawaiian Islands.
+Kremlin means the center of government, applicable to towns across the Soviet Union.
+The per capita use of soap in Great Britain is 40 ounces annually, compared to 22.6 ounces in France.
+A monastery in Ethiopia can only be entered by climbing up a rope dropped over a cliff.
+In Turkey, mourners wear purple clothing instead of black.
+Saudi Arabia imports construction sand as desert sand isn’t suitable.
+Some Tibetan women use metal instruments to pick their noses.
+The Soviet Union has a chemical waste dump twice as big as Vermont.
+Tropics’ nights are warm due to moist air retaining heat, unlike desert nights.
+A South American tribe survived by guarding burning embers as they forgot how to make fire.
+The largest Gothic cathedral is on Amsterdam Avenue in New York City.
+The smallest church is in Kentucky, fitting three people.
+Only 8.5% of Alaskans are Eskimos.
+Reno, Nevada, is further west than Los Angeles, California.
+24% of Los Angeles is covered in roads and parking lots.
+A house in Margate, New Jersey, is shaped like an elephant, while one in Norman, Oklahoma, is shaped like a chicken.
+A house in Massachusetts is made entirely of newspapers.
+Another house in Canada is made of 18,000 glass bottles.
+The Greek word for brotherly love is Philadelphia.
+St. Louis, Missouri, has the worst air pollution among American cities.
+Over half of all Americans travel more than a million miles in their lifetimes.
+American drivers average about 8,200 miles annually.
+The only golf course in Tonga has 15 holes, and there’s no penalty if a monkey steals your ball.
+The first golf rule booklet was published in Scotland in 1754.
+Tennis pro Evonne Goolagong’s last name means ‘kangaroo’s nose.’
+An experiment revealed David Beckham runs an average of 8.8 miles per game.
+The fastest golf drive ever recorded was 120 mph by Gene Sarazen.
+Michael Sangster once served a tennis ball at 154 mph in the 1960s.
+In 1964, Mickey Mantle hit home runs from both sides of the plate in one game, setting a record.
+A gambler won £25,000 by betting £100 on a Manchester City comeback.
+Arsenal players were told to stop giving their shirts to fans.
+The study of David Beckham is part of a University Degree course at Staffordshire University.
+A Romanian soccer team banned a female photographer, believing she brought bad luck.
+A Medellin man legally changed his name to Deportivo Independiente Medellin after his favorite soccer team.
+A volleyball alternative name is minonette.
+David Beckham’s Hindi tattoo of his wife’s name is misspelled.
+In the US, there are more Frisbee discs sold annually than baseballs, basketballs, and footballs combined.
+Ronaldinho broke a cathedral window while filming a commercial.
+Lightning strikes the Earth about 6,000 times a minute.
+1% of the US has been affected by tornadoes over the last 100 years.
+In Gabon, 1.8-billion-year-old nuclear reactors exist naturally.
+The Eiffel Tower shrinks by six inches in winter.
+Niagara Falls froze solid in the winter of 1932.
+A Texas man built the first monster truck, Bigfoot, in 1974.
+Lego sets sold in 10 years could stretch from London to Perth.
+Table tennis was originally played with champagne corks and cigar-box paddles.
+Bulletproof vests and laser printers were both invented by women.
+Mount Palomar’s telescope can see up to 7,038,835,200,000,000 miles.
+The first personal computer, Altair, came in a kit in 1974.
+IBM’s first personal computer was introduced in 1981.
+The Macintosh computer was based on Apple’s Lisa, released in 1983, which was the first system to use a graphical user interface.
+The name "Intel" is derived from the company’s original name, "Integrated Electronics."
+Over 23% of all photocopier faults are caused by people photocopying their bottoms.
+The town of Halfway, Oregon, temporarily changed its name to Half.com as a publicity stunt.
+Scandinavia leads the world in internet access, according to the UN communications agency.
+Hornby developed a way to connect a Scalextric track to a PC so people can race each other online.
+The widget was voted the greatest technological invention in 40 years by readers of T3.co.uk.
+The first UK parking payment by mobile phone system was launched in Scotland.
+PlayStation 2’s WWE SmackDown game features female characters trying to rip each other’s clothes off.
+Britney Spears, Harry Potter, and The Matrix topped Google’s most-searched subjects list in 2003.
+A Belgian couple married via SMS as text messaging was central to their relationship.
+In February 2002, Friends Reunited was one of the UK’s top-ten most visited websites.
+As of April 2003, Friends Reunited had 8.6 million registered members.
+About 27% of online transactions are abandoned at the payment screen.
+Four out of five visitors never return to a website.
+Homepage space on a big company's website is 1,300 times more valuable than Tokyo’s business district land.
+The typewriter was invented before the fountain pen.
+Monster truck engines are custom-built, alcohol-injected, and cost around $35,000.
+Monster truck engines burn 2–2.5 gallons of methanol per 250-foot run.
+Approximately 1,314 phone calls are misplaced by telecom services every minute.
+Britons make about 132 million mobile phone calls daily.
+A plane capable of flying without fuel by riding on a ground-based laser beam was successfully tested.
+Airbags deploy at a speed of 200 mph.
+An hourglass and a sundial serve the same purpose, though one has moving parts and the other doesn’t.
+Russian scientists developed a drug that prolongs drunkenness and enhances intoxication.
+The fishing reel was invented around 300 AD.
+An ounce of gold can be stretched into a 50-mile-long wire.
+Spam filters block many emails containing "cialis" because it’s embedded within the word "specialist."
+DaimlerChrysler UK launched a car with an integrated hands-free phone system.
+There are over 150 million mobile phones in use in the US, more than one for every two people.
+A Boeing 767 airliner consists of approximately 3.1 million parts.
+Replying over 100 times to a spam email can overwhelm the sender's system and disrupt further spam.
+Thomas Edison’s first film showed a person sneezing.
+A German company built the first talking washing machine, capable of recognizing spoken commands.
+A Telewest Broadband device emits scents tied to certain emails arriving on your PC.
+The F-117 fighter jet design stemmed from research into how bumblebees fly.
+Silly Putty originated from residue left during latex condom production.
+The Grand Coulee Dam is the largest structure ever built, holding back the Columbia River.
+The Mars Rover Spirit is powered by six motors the size of C batteries, with a top speed of 0.1 mph.
+Bulletproof vests, fire escapes, windshield wipers, and laser printers were all invented by women.
+The Oblivion ride at Alton Towers has a G-force higher than a typical NASA space shuttle launch.
+Natural gas has no odor; the smell is added to detect leaks.
+The magnetic North Pole shifts approximately 7 meters daily.
+Iceland’s 1783 volcanic eruption blocked the sun over Europe temporarily.
+A massive underground river beneath the Nile carries six times more water than the river itself.
+A day on Mercury is twice as long as its year.
+Mexico City sinks about 10 inches annually.
+Siberian pipeline leaks add two to four million tons of oil into the Soviet water table annually.
+Dioxin 2,3,7,8-tetrachlorodibenzo-p-dioxin is 150,000 times deadlier than cyanide.
+Large clouds can store enough water for 500,000 showers.
+The Earth experiences two earthquakes every minute.
+After billions of years, black holes transition to white holes and eject all material they consumed.
+Siberia contains over 25% of the world’s forests.
+Commonwealth Bay, Antarctica, is the world’s windiest place.
+About 50% of forest fires are started by lightning.
+You weigh slightly less when the moon is directly overhead due to gravitational effects.
+Pumice is the only rock that floats in water.
+Aluminum is the most abundant metal in the Earth’s crust.
+Thirsty plants emit high-pitched sounds humans can’t hear as a cry for help.
+Seawater is 1.5 pounds heavier per cubic foot than freshwater.
+Counting to 1 billion would take approximately 31.7 years.
+The Great Pyramid of Cheops could provide enough stone to encircle the Earth with a 20-inch-high wall.
+Electricity travels through a field around a wire, not the wire itself.
+The Earth is slightly pear-shaped, not perfectly round.
+Six continents can grow pumpkins, with Antarctica being the exception.
+Christmas trees take 7–15 years to grow.
+Myrrh, a plant oil, symbolizes mortality and is used to bury the dead.
+Raindrops measure 0.5–2.5 mm and fall at an average speed of 21 feet per second.
+Sound in the Arctic can carry a conversation up to 1.8 miles on a calm day.
+Sleet forms when snow begins to melt on its way down to the Earth.
+Snow appears white due to reflecting surfaces on its crystals.
+Snowflakes can grow up to 3–4 inches in diameter in rare cases.
+Alaska contains three of the four US compass extremities: north, east, and west.
+A small child could crawl through a blue whale’s major arteries.
+Saturn has a density lower than water and would float in a sufficiently large bathtub.
+After the 1883 Krakatoa eruption, the moon appeared blue and sunsets looked green due to volcanic dust.
+Under ideal conditions, a lit match can be seen from 50 miles away on a mountain.
+A gnomon is the part of a sundial that casts a shadow.
+The largest crystals, found in Mexico's Cave of Crystals, are made of gypsum and measure up to 12 meters.
+The Cullinan Diamond, found in 1905, was 3,100 carats and contributed to the British Crown Jewels.
+The fastest shooting stars travel at speeds of 150,000 mph.
+The full moon is about one-fifth the size of the African continent.
+A coalmine fire in Haas Canyon, Colorado, burned from 1916 until 2000.
+An iceberg the size of Long Island, New York, broke off Antarctica and disrupted penguin travel.
+Niagara Falls froze completely in 1932’s winter.
+In 2003, Hell, Michigan, had 86 days of below-freezing temperatures.
+Plants can suffer jet lag.
+The Eiffel Tower shrinks by 6 inches in winter.
+A snowflake can take up to an hour to fall from the cloud to the Earth.
+Only 5% of the ocean floor has been mapped in detail like Mars’s surface.
+Urea is only found in human urine and Dalmatian dogs.
+Humans have dammed over 10 trillion gallons of water in the last four decades.
+An igloo transforms into a "qarmaq" in spring by replacing its dome with animal skins.
+Tornadoes have affected 1% of the US land area over the past century.
+An estimated 10^40 snowflakes have fallen since Earth’s formation.
+Gabon has 1.8-billion-year-old natural nuclear reactors.
+Lightning strikes Earth 6,000 times a minute.
+A solar eclipse can’t last longer than 7 minutes and 58 seconds.
+The largest snowflakes ever, 15 inches in diameter, fell in Montana in 1887.
+Jimmy Carter once reported seeing a UFO in Georgia.Texas allows residents to cast absentee ballots from space.
+Almost 20% of the billions of dollars spent rebuilding Iraq is lost to theft, kickbacks, and corruption.
+The fertility rate in states that voted for George Bush is 12% higher than in states that favored John Kerry.
+The US Treasury has over 20 staff investigating Cuba trade violations, compared to four tracking Osama Bin Laden and Saddam Hussein’s assets.
+More than 8,100 US troops are still listed as missing in action from the Korean War.
+The Pentagon contains 68,000 miles of phone lines.
+George W. Bush and John Kerry are 16th cousins, three times removed.
+A Santa Fe law proposal would require pets to wear seat belts in cars.
+In January 2004, the US borrowed £780,000,000 daily from foreign investors.
+During Bill Clinton’s presidency, he sent only two emails.
+In 2004, 60.7% of eligible voters participated in the US presidential election, the highest in 36 years.
+President Bush won reelection with votes from less than 31% of eligible US voters.
+CNN accidentally aired expletives during John Kerry’s Democratic Convention speech.
+Stalin stood at only 5 feet, 4 inches tall.
+Charles Kennedy’s Liberal Democrats mistakenly emailed election plans to opponents.
+Welsh First Minister Rhodri Morgan was mistaken for a Doctor Who villain by BBC staff.
+Norway’s Crown Prince Haakon placed Portugal on the Mediterranean in a speech.
+The day after Bush’s reelection, Canada’s immigration website had 115,000 visitors, up from 20,000 daily.
+Greek officials apologized for removing a 113-year-old man from the electoral register, assuming he had died.
+Cherie Blair mistakenly called her Kiwi hosts Australians during a Down Under tour.
+A Staffordshire councilor was caught speeding by a mobile camera he had purchased with civic funds.
+A war veteran lost after D-Day commemorations received a ride back to Paris from Jacques Chirac.
+Around 1,600 Belgians wore only swimsuits or trunks to vote in an election.
+Benjamin Franklin gave guitar lessons.
+The Pentagon originally had twice the number of bathrooms needed due to segregation laws.
+Bush’s hometown newspaper endorsed Kerry, while Kerry’s endorsed Bush.
+George W. Bush rarely attends church but won nearly two-thirds of weekly churchgoer votes.
+An NHS patient holds the record for the longest hospital trolley wait at 77 hours and 30 minutes.
+The oldest person issued a driver’s license in the US was 109 years old.
+North Korean radios are preset to only receive government channels.
+George Washington spent 7% of his annual salary on liquor.
+France banned the word "email" from official documents, opting for "courriel."
+Norwegian MP Trond Helleland was caught gaming during a Parliament debate.
+A Brazilian MP lost his seat for offering voters Viagra in exchange for votes.
+India has an estimated 550 million voters.
+Conservative MP John Bercow sold his home because its low ceilings were inconvenient for his tall fiancée.
+The New York Police Department has a £1 billion budget, larger than most national armies.
+The US Constitution was initially written on hemp paper.
+An early draft of the Declaration of Independence referred to "life, liberty, and the pursuit of property."
+During Thomas Jefferson’s presidency, the US had a $1 million surplus.
+Calvin Coolidge had an electric horse installed in the White House.
+Thomas Jefferson introduced macaroni and cheese to the US.
+Abraham Lincoln’s son, Robert Todd Lincoln, was saved from a train accident by John Wilkes Booth’s brother.
+Rutherford B. Hayes was the first US president to use a telephone.
+President Hoover approved a plan to air-condition the White House in 1929.
+Abraham Lincoln’s ghost is said to haunt the White House.
+Richard Nixon was the first US president to visit all 50 states.
+Ronald Reagan was the only president to have been divorced.
+George H.W. Bush was the first sitting vice president elected president since 1837.
+Harry Truman lived on just $112.56 a month after retiring from the presidency.
+The shortest war in history, between Britain and Zanzibar, lasted only 38 minutes.
+Cleopatra lived closer in time to the moon landing than the construction of the Great Pyramid.
+The first-ever recorded political scandal was in ancient Mesopotamia.
+A Russian emperor once taxed men who grew beards.
+The term "lobbyist" originated from the lobbies of London’s Houses of Parliament.
+Women could vote in New Zealand starting in 1893.
+The US Capitol’s dome contains over 8,900,000 pounds of cast iron.
+The White House requires 570 gallons of paint to cover its exterior.
+Winston Churchill was made an honorary US citizen in 1963.
+Margaret Thatcher once worked as a food chemist, developing soft-serve ice cream.
+The only president buried in Washington, D.C., is Woodrow Wilson.
+During Prohibition, the US Treasury poisoned industrial alcohol to prevent illegal consumption.
+The longest filibuster in US history lasted 24 hours and 18 minutes.
+US Congress once approved a "War on Pigs" to control wild hog populations.
+Iceland's Althingi is the world's oldest parliament, founded in 930 AD.
+Finland was the first country to grant women the right to vote and run for office.
+The Statue of Liberty’s full name is "Liberty Enlightening the World."
+Paris’s Eiffel Tower was initially painted red.
+The Leaning Tower of Pisa leans due to unstable foundation soil.
+The Panama Canal cost approximately $375 million to build.
+The Great Wall of China is visible from low Earth orbit.
+Buckingham Palace was originally called Buckingham House.
+London’s Big Ben is the bell, not the clock tower.
+The Colosseum could hold up to 80,000 spectators in ancient Rome.
+The Great Fire of London destroyed 87 churches.
+Berlin has more bridges than Venice.
+The Sydney Opera House’s roof design was inspired by orange peels.
+Amsterdam is built on over 11 million wooden piles.
+Mount Rushmore’s carving took 14 years to complete.
+The Taj Mahal was built in memory of Emperor Shah Jahan’s wife.
+Machu Picchu remained unknown to the outside world until 1911.
+The Hoover Dam generates over 4 billion kilowatt-hours of electricity annually.
+Niagara Falls has moved about 7 miles upstream in the past 12,000 years.
+The Alhambra is Spain’s most visited monument.
+Venice has over 400 bridges.
+The Petronas Towers were the tallest buildings in the world until 2004.
+The Sphinx in Egypt is missing its nose due to cannon fire.
+Stonehenge’s stones are thought to have been transported over 150 miles.
+Pompeii was buried under volcanic ash in 79 AD.
+The Louvre in Paris is the world’s largest museum.
+The Eiffel Tower sways up to 6 inches in the wind.
+Angkor Wat in Cambodia is the world’s largest religious structure.
+The Burj Khalifa in Dubai is the tallest building in the world at 828 meters.
+The Forbidden City in Beijing has 9,999 rooms.
+The Giza Pyramids are aligned with the Orion constellation.
+New York’s Central Park was the first landscaped public park in the US.
+Tokyo has the busiest pedestrian crossing, with over 2,500 people crossing at once.
+The Golden Gate Bridge is painted International Orange.
+Mount Everest’s official height is 8,848 meters.
+The Great Barrier Reef is the largest coral reef system in the world.The Amazon River is the largest river by discharge volume in the world.
+Lake Baikal in Russia is the world’s deepest freshwater lake.
+The Sahara Desert is the largest hot desert in the world.
+Mount Kilimanjaro is the tallest free-standing mountain in the world.
+Greenland is the world’s largest island.
+Russia spans 11 time zones.
+Antarctica contains 90% of the world’s fresh water.
+Iceland is the only country with no mosquitoes.
+The Dead Sea is the lowest point on Earth's surface.
+Africa is the only continent in all four hemispheres.
+The Pacific Ocean is the largest and deepest ocean in the world.
+The Mariana Trench is the deepest point in the Earth’s oceans.
+Australia is the smallest continent.
+The Andes is the longest continental mountain range in the world.
+Asia is the largest continent by area and population.
+The Great Dividing Range is Australia’s most significant mountain range.
+Madagascar is home to species found nowhere else on Earth.
+The Nile is traditionally considered the longest river in the world.
+The Caspian Sea is the largest enclosed inland body of water on Earth.
+Hawaii is the most isolated population center in the world.
+The Mississippi River system drains 41% of the US.
+Yosemite Valley was formed by glaciers.
+The Ganges River is considered sacred by Hindus.
+The Danube River flows through 10 countries.
+Victoria Falls is known as "The Smoke That Thunders."
+Uluru, also known as Ayers Rock, is sacred to Indigenous Australians.
+The Amazon Rainforest is the largest rainforest in the world.
+The Atacama Desert is the driest non-polar desert on Earth.
+The Okavango Delta is a unique inland delta.
+The Maldives is the world’s flattest country.
+The Strait of Gibraltar separates Europe and Africa.
+Lake Titicaca is the highest navigable lake in the world.
+The Yangtze is the longest river in Asia.
+The Alps are Europe’s highest and most extensive mountain range.
+The Mekong River flows through six countries in Southeast Asia.
+Mount Fuji is an active stratovolcano in Japan.
+The Rocky Mountains extend over 3,000 miles across North America.
+The Gulf of Mexico is the largest gulf in the world.
+The Caribbean Sea is home to over 7,000 islands.
+Angel Falls in Venezuela is the world’s highest uninterrupted waterfall.
+The Galápagos Islands inspired Darwin’s theory of evolution.
+The Himalayas are home to all 14 of the world’s peaks over 8,000 meters.
+The Arctic Ocean is the smallest and shallowest ocean.
+The Victoria Desert is Australia’s largest desert.
+Lake Superior is the largest freshwater lake by surface area.
+The Congo River is the world’s second-largest river by discharge volume.
+Mount McKinley, or Denali, is the tallest mountain in North America.
+The Euphrates and Tigris rivers cradle the Fertile Crescent.
+The Great Rift Valley is visible from space.
+The Mekong Delta produces much of Vietnam’s rice.
+New Zealand is home to glowworm caves.
+The Grand Canyon was carved by the Colorado River.
+Iceland is located on both the Eurasian and North American tectonic plates.
+The Blue Hole in Belize is a giant marine sinkhole.
+The Cliffs of Moher are Ireland’s most famous cliffs.
+Norway is known as the "Land of the Midnight Sun."
+The Loire River is the longest river in France.
+Mount Kosciuszko is Australia’s highest peak.
+Banff National Park is Canada’s oldest national park.
+The Amazon basin covers 40% of South America.
+The Tasman Sea separates Australia and New Zealand.
+Finland is called the "Land of a Thousand Lakes."
+The Maldives is the world’s lowest country, with an average elevation of 1.5 meters.
+Yellowstone was the first national park in the US.
+The Black Sea has a layer of water with no oxygen.
+The Aconcagua is the highest peak in South America.
+The Great Victoria Desert is larger than the United Kingdom.
+The Iguazu Falls straddle Argentina and Brazil.
+The Red Sea is the saltiest sea.
+The Rhine is a major river in Europe, running through six countries.
+The Serengeti is home to one of the largest mammal migrations.
+The Baltic Sea is almost completely enclosed by Europe.
+The Sahara Desert expands annually.
+The Kalahari Desert covers much of Botswana.
+The Karakoram Range includes K2, the second-highest peak in the world.
+Mount St. Helens erupted catastrophically in 1980.
+The Appalachian Mountains are among the oldest mountains on Earth.
+The Pyrenees form a natural border between Spain and France.
+The Amazon Rainforest produces 20% of the world's oxygen.
+The Danakil Depression in Ethiopia is one of the hottest places on Earth.
+The Suez Canal connects the Mediterranean Sea and the Red Sea.
+Hawaii is moving closer to Japan by 4 inches annually.
+Bora Bora is surrounded by a lagoon and barrier reef.
+The Cliffs of Dover are composed of chalk.
+The Dead Sea is shrinking due to water diversion.
+The English Channel separates the UK from mainland Europe.
+The Baltic Sea freezes during winter.
+The Loire Valley is famous for its vineyards.
+The Great Australian Bight is a large open bay.
+The Caspian Sea lies between Europe and Asia.
+The Yucatan Peninsula is prone to sinkholes.
+The Arctic Circle is one of the five major latitude lines.
+The Mississippi Delta produces much of the US’s seafood.
+Patagonia spans Argentina and Chile.
+The Everglades is the largest subtropical wilderness in the US.
+Lake Geneva borders Switzerland and France.
+The Baltic Sea is one of the least salty seas.
+The Sahara is home to the Tuareg people.
+The Outback covers most of Australia.
+The Bay of Bengal is the largest bay in the world.The Ganges Delta is the largest delta in the world.
+The Danube Delta is a UNESCO World Heritage Site.
+The Amazon River basin contains the world's largest tropical rainforest.
+The Nile River flows through 11 countries.
+The Great Basin Desert in the US is a cold desert.
+The Andes host the world’s highest active volcano, Ojos del Salado.
+Mount Etna is the most active volcano in Europe.
+Hawaii’s Kilauea is one of the most active volcanoes on Earth.
+The Matterhorn in the Alps has one of the highest fatality rates for climbers.
+The Gulf Stream influences the climate of Western Europe.
+Greenland’s ice sheet covers about 80% of the island.
+The Baltic states include Estonia, Latvia, and Lithuania.
+Mount Vesuvius last erupted in 1944.
+Antarctica’s Lake Vostok lies under nearly 4 kilometers of ice.
+The Mediterranean Sea is almost entirely enclosed by land.
+The Galápagos Islands are home to unique species such as giant tortoises.
+Lake Como in Italy is known for its scenic beauty.
+Uluru changes color depending on the time of day and year.
+Iceland has more than 200 volcanoes.
+Mount Everest has been climbed by over 6,000 people.
+Lake Geneva is the largest lake in the Alps.
+The Dead Sea's high salt concentration allows people to float effortlessly.
+The Nile River delta is densely populated.
+The Maldives consists of 26 atolls.
+The Mariana Islands include Guam, a US territory.
+Madagascar’s baobab trees are known as the "Tree of Life."
+The Appalachian Trail is over 2,000 miles long.
+The Amazon River's mouth is over 200 miles wide.
+The Okavango Delta floods seasonally.
+The Great Wall of China stretches over 13,000 miles.
+The Mojave Desert is the driest desert in North America.
+The Mississippi River flows into the Gulf of Mexico.
+The Sahara’s sand dunes can reach heights of over 500 feet.
+The Amazon Rainforest spans nine countries.
+Norway’s fjords were carved by glaciers.
+Mount Rainier is considered one of the most dangerous volcanoes in the US.
+The Yangtze River is home to the endangered Chinese paddlefish.
+The Mekong River is vital for Southeast Asia’s fisheries.
+Banff National Park is a UNESCO World Heritage Site.
+The Andes contain over 100 active volcanoes.
+The Mississippi is the second-longest river in North America.
+The Great Barrier Reef is visible from space.
+The Serengeti hosts the largest terrestrial mammal migration.
+The Red Sea is one of the warmest seas in the world.
+The Rockies stretch from Canada to New Mexico.
+Alaska’s Denali National Park is home to North America’s tallest mountain.
+Victoria Falls has a drop of over 300 feet.
+The Himalayas were formed by the collision of the Indian and Eurasian plates.
+Iceland’s geothermal energy powers most of its homes.
+The Amazon is often referred to as the "lungs of the Earth."
+Mount Kilimanjaro has three volcanic cones, Kibo, Mawenzi, and Shira.
+Lake Superior contains 10% of the world's surface freshwater.
+The Sahara Desert’s temperature can drop below freezing at night.
+Madagascar is known for its lemurs.
+The Great Victoria Desert is sparsely populated.
+The Caspian Sea has no natural outflow.
+The Mekong is the 12th longest river in the world.
+The Appalachian Mountains extend into Canada.
+The Amazon Rainforest hosts more than 400 billion trees.
+The Great Dividing Range runs parallel to Australia’s eastern coast.
+Lake Titicaca is shared by Peru and Bolivia.
+Greenland is an autonomous territory of Denmark.
+The Great Basin Desert includes the Bonneville Salt Flats.
+Lake Baikal freezes completely in winter.
+The Alps cover parts of eight European countries.
+The Blue Hole in Belize is a UNESCO World Heritage Site.
+The Nile River delta has been farmed for thousands of years.
+The Atacama Desert receives less than 1 millimeter of rain annually.
+The Ganges River is home to freshwater dolphins.
+Mount Everest’s summit has an oxygen level only one-third of sea level.
+The Andes are home to Machu Picchu.
+The Okavango Delta is in Botswana.
+The Dead Sea is 10 times saltier than the ocean.
+The Victoria Desert is named after Queen Victoria.
+The Grand Canyon is about 277 miles long.
+The Baltic Sea is bordered by nine countries.
+Mount Fuji is Japan’s tallest mountain.
+The Yangtze River is crucial for China’s agriculture and transportation.
+Norway’s fjords are some of the longest and deepest in the world.
+Greenland’s ice melt contributes significantly to global sea level rise.
+The Sahara’s size is comparable to that of the US.
+Lake Como is one of Europe’s deepest lakes.
+The Mojave Desert includes Death Valley.
+The Caspian Sea contains oil and natural gas reserves.
+Mount McKinley was renamed Denali in 2015.
+The Amazon River has over 1,000 tributaries.
+Iceland’s glaciers cover about 11% of its land area.
+Mount Vesuvius is near Naples, Italy.
+The Danube Delta supports diverse wildlife.
+Madagascar’s isolation has led to unique biodiversity.
+The Great Rift Valley runs from Lebanon to Mozambique.
+Victoria Falls spans nearly a mile in width.
+The Grand Canyon’s depth exceeds 6,000 feet in places.
+Mount Everest’s temperature can drop to -60°F.
+The Alps include Mont Blanc, Western Europe’s tallest peak.
+Lake Baikal contains more water than all the Great Lakes combined.
+The Amazon’s basin is about the size of the contiguous US.
+Mount Fuji is a popular pilgrimage site.
+The Sahara has several oases, including the Siwa Oasis.
+The Dead Sea is the world’s deepest hypersaline lake.The Atacama Desert has regions where no rain has been recorded.
+The Great Barrier Reef covers approximately 133,000 square miles.
+The Danube River ends in the Black Sea.
+Greenland’s glaciers are retreating due to climate change.
+The Himalayas influence monsoons in South Asia.
+The Grand Canyon was formed over millions of years by erosion.
+The Amazon River supports a vast network of ecosystems.
+Mount Kilimanjaro’s glaciers are rapidly shrinking.
+The Great Wall of China is not a single wall but a series of walls.
+Lake Titicaca is fed by rainfall and melting glaciers.
+The Great Dividing Range includes the Snowy Mountains.
+The Okavango Delta is one of the Seven Natural Wonders of Africa.
+The Sahara Desert’s sand dunes are constantly shifting due to wind.
+The Andes are the second-highest mountain range in the world.
+Greenland experiences months of continuous daylight and darkness.
+Mount Everest’s summit can only be reached during short climbing windows.
+The Mekong River is known for its seasonal floods.
+The Baltic Sea is connected to the North Sea via the Kiel Canal.
+Lake Superior has over 400 islands.
+The Dead Sea’s buoyancy is due to its high salt content.
+Norway’s fjords were formed during the last Ice Age.
+The Nile River has two main tributaries, the White Nile and the Blue Nile.
+The Sahara Desert’s extreme heat can reach up to 136°F.
+Mount Vesuvius destroyed Pompeii in 79 AD.
+The Grand Canyon contains layers of rock over 2 billion years old.
+The Okavango Delta attracts thousands of species of wildlife.
+Greenland’s ice sheet is the second-largest in the world.
+The Ganges River is considered polluted but remains sacred.
+Lake Baikal is home to the world’s only freshwater seals.
+Mount Fuji last erupted in 1707.
+The Great Barrier Reef faces threats from climate change and coral bleaching.
+The Amazon Rainforest contains one in ten known species on Earth.
+The Atacama Desert is used for Mars simulations due to its arid conditions.
+The Great Wall of China took over 2,000 years to complete.
+The Danube River has been an important trade route for centuries.
+Madagascar’s rainforests are being threatened by deforestation.
+Mount Kilimanjaro is a popular destination for trekkers.
+The Great Dividing Range impacts Australia’s climate patterns.
+The Dead Sea is shrinking due to water diversion and evaporation.
+Lake Titicaca is a significant cultural site for the Indigenous peoples of the Andes.
+The Nile Delta is shrinking due to rising sea levels.
+Mount Everest has several camps set up along climbing routes.
+The Sahara Desert’s nighttime temperatures can drop below freezing.
+The Okavango Delta provides a critical water source for wildlife.
+The Great Barrier Reef contains over 2,900 individual reefs.
+The Mekong River sustains tens of millions of people.
+Greenland has no permanent roads between its towns.
+The Grand Canyon is visited by millions of tourists annually.
+The Andes are home to ancient civilizations like the Inca.
+Norway’s fjords are a major tourist attraction.
+Lake Superior’s water could cover North and South America in a foot of water.
+The Sahara Desert is expanding due to desertification.
+The Atacama Desert has been used to test rovers for space exploration.
+Mount Fuji is a UNESCO World Heritage Site.
+The Amazon River’s source is in the Andes Mountains.
+The Great Wall of China was originally built to protect against invasions.
+Greenland’s ice loss contributes significantly to global sea level rise.
+Mount Kilimanjaro can be climbed without technical mountaineering skills.
+Lake Baikal is a UNESCO World Heritage Site.
+The Mekong Delta is known as Vietnam’s "rice bowl."
+The Grand Canyon is a UNESCO World Heritage Site.
+Madagascar’s biodiversity includes over 200 species of mammals.
+Norway has over 1,000 fjords.
+The Dead Sea’s salt concentration is about 34%.
+The Sahara Desert is home to the nomadic Tuareg people.
+The Okavango Delta is an inland delta that never reaches the sea.
+Lake Superior freezes partially during winter.
+The Great Barrier Reef is a breeding ground for humpback whales.
+The Ganges River is prone to seasonal flooding.
+The Grand Canyon’s rock layers reveal Earth’s geologic history.
+Greenland is the world’s largest non-continental island.
+Mount Everest’s base camp is located at an altitude of 17,598 feet.
+Madagascar is often called the "eighth continent" due to its unique ecosystem.
+The Great Wall of China stretches through 15 provinces.
+Lake Titicaca is believed to be the birthplace of the Inca civilization.
+The Mekong River supports a diverse fish population.
+The Atacama Desert has salt flats and unique rock formations.
+The Great Dividing Range includes rich biodiversity.
+Norway’s coastline is over 15,000 miles long due to its fjords.
+The Sahara Desert’s sand dunes can reach up to 500 feet in height.
+Greenland’s capital, Nuuk, is one of the world’s smallest capitals.
+The Great Barrier Reef is protected as a Marine Park.
+Lake Superior’s shores are home to several national parks.
+The Dead Sea’s water level drops by about 3 feet per year.
+The Grand Canyon contains over 1,000 caves.
+Mount Fuji is a cultural icon in Japan.
+The Amazon River flows through Brazil, Peru, and Colombia.
+The Great Wall of China is visible from some orbits but not from the Moon.
+Mount Kilimanjaro’s name means "Mountain of Whiteness" in Swahili.
+Lake Baikal’s water is some of the clearest in the world.
+The Okavango Delta is a UNESCO World Heritage Site.
+The Great Barrier Reef supports thousands of marine species.
+Greenland’s ice sheet is over 1.7 million square kilometers.
+Madagascar is home to over 100 species of lemurs.
+The Mekong River’s annual floods deposit nutrient-rich sediment.
+The Sahara Desert’s size has doubled over the past century.
+Mount Everest was first summited in 1953.
+Norway’s fjords were formed by glacial retreat.
+The Grand Canyon is home to the Havasupai people.
+The Atacama Desert contains ancient petroglyphs.
